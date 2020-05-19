@@ -42,11 +42,15 @@ body {
 }
 
 #mainTitle {
-    font-size: 100px;
+    font-size: 110px;
 }
 
 #subTitle {
     font-size: 32px;
+}
+
+#slogan {
+    font-size: 45px;
 }
 
 #title {
