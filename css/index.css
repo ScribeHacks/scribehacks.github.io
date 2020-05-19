@@ -1,0 +1,94 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+    /* Dark Mode Colors */
+    --bg-color: #363635; 
+    --text-color: #DFF8EB;
+    --border-color: #080F0F;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+    /* Light Mode Colors */
+    --bg-color: #CDC5B4; 
+    --text-color: #363635;
+    --border-color: #896978;
+    }
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/CircularStd-Black.woff') format('woff'), url('../fonts/CircularStd-Black.ttf')  format('truetype'), url('../fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}    
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    /* width: 100vh;
+    height: 500%; */
+    /* display: inline-block; */
+    height: 50vh;
+    margin: auto;
+    width: 50%;
+    padding: 25vh;
+}
+
+#title {
+    font: bold;
+    font-family: 'CircularStd';
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+#mainTitle {
+    font-size: 110px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.subTitle {
+    font-size: 32px;
+}
+
+#slogan {
+    font-size: 45px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
