@@ -3,29 +3,30 @@ function initTypeEffect() {
     new TypeIt('#info-text3', {
         waitUntilVisible: true,
         cursor: false,
-        speed: 100
+        speed: 80
     })
     .pause(1500)
-    .type('.date("April 17-18");')
+    .type('Date: April 17-18')
     .options({lifeLike: true})
     .go();
 
     new TypeIt('#info-text2', {
         waitUntilVisible: true,
-        cursor: false
+        cursor: false,
+        speed: 80
     })
     .pause(1000)
-    .type('.registerBy("April 15");')
+    .type('Register By: April 15')
     .options({lifeLike: true})
     .go();
 
     new TypeIt('#info-text1', {
         waitUntilVisible: true,
         cursor: false,
-        speed: 60
+        speed: 50
     })
     .pause(500)
-    .type('.location("2727 Hackathon Street, San Jose, CA");')
+    .type('Location: 2727 Hackathon Street, San Jose, CA')
 
     .options({lifeLike: true})
     .go();
