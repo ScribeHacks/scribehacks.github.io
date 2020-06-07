@@ -66,9 +66,16 @@ body {
 }
 
 #frontPage {
-    color: var(--text-color);
+    /* color: var(--text-color); */
     text-align: center;
     height: 100%;
+
+    background: linear-gradient(141deg, #f8f7f9, #415a77);
+    background-size: 400% 400%;
+
+    -webkit-animation: background 20s ease infinite;
+    -moz-animation: background 20s ease infinite;
+    animation: background 20s ease infinite;
 }
 
 .border-box {
@@ -125,7 +132,8 @@ body {
 }
 
 #attendee {
-    background-color: var(--button-color);
+    background-color: gainsboro;
+    border-radius: 15px;
     border: none;
     color:var(--text-color);
     padding: 16px 32px;
@@ -188,3 +196,19 @@ body {
     width: 50%;
     font-size: 25px;
   }
+
+  @-webkit-keyframes background {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+@-moz-keyframes background {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+@keyframes background {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
