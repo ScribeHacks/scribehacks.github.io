@@ -163,9 +163,6 @@ body {
     cursor: pointer;
     padding: 15px 10px 30px 30px;
     width: 50%;
-    border: thick;
-    border-color: black;
-    border-radius: 500px;
     text-align: center;
     font-size: 30px;
     transition: 0.4s;
@@ -185,12 +182,14 @@ body {
   }
   
   .panel {
-    padding: 0 0 0 25%; 
+    padding: 0 0 0 0; 
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     width: 50%;
     font-size: 25px;
+    background-color: var(--paper-color);
+    margin-left: 25%;
   }
 
   #section2 {
@@ -209,6 +208,7 @@ body {
       background-color: var(--paper-color);
   }
 
+  #section6 {
       background-color: var(--paper-color);
   }
   @-webkit-keyframes background {
@@ -230,7 +230,6 @@ body {
 @media screen and (max-width: 992px) {
     .accordion {
         width: 100%;
-        border-radius: 0px;
     }
     .panel {
         font-size: 15px;
