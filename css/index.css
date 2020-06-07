@@ -193,6 +193,24 @@ body {
     font-size: 25px;
   }
 
+  #section2 {
+      background-color: var(--cool-color);
+  }
+
+  #section3 {
+      background-color: var(--button-color);
+  }
+  
+  #section4 {
+      background-color: var(--button-color);
+  }
+
+  #section5 {
+      background-color: var(--paper-color);
+  }
+
+      background-color: var(--paper-color);
+  }
   @-webkit-keyframes background {
     0%{background-position:0% 40%}
     50%{background-position:100% 61%}
