@@ -3,7 +3,8 @@
     --bg-color: #F8F7F9; 
     --text-color: #2B2D42;
     --cool-color: #92DCE5;
-    --button-color: #6C809A
+    --button-color: #415A77;
+    --paper-color: #DBCDC6;
     }
 
     #fp-nav ul li a span, .fp-slidesNav ul li a span {
@@ -61,6 +62,7 @@ body {
     padding: 25vh;
     height: 100%;
     width: 100%;
+    word-wrap: break-word;
 }
 
 #frontPage {
@@ -146,15 +148,21 @@ body {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+@media screen and (max-width: 992px) {
+    .accordion {
+        
+    }
+}
 .accordion {
     background-color: var(--cool-color);
     color: var(--text-color);
     cursor: pointer;
-    padding: 25px;
+    padding: 15px;
     width: 50%;
     border: none;
     text-align: center;
-    outline: none;
+    outline: thin;
+    outline-color: var(--text-color);
     font-size: 30px;
     transition: 0.4s;
   }
@@ -173,7 +181,7 @@ body {
   }
   
   .panel {
-    padding: 0 0 0 25%;
+    padding: 0 0 0 25%; 
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
