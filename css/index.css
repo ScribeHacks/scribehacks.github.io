@@ -69,13 +69,21 @@ body {
     /* color: var(--text-color); */
     text-align: center;
     height: 100%;
+    z-index: 10;
+}
 
-    background: linear-gradient(141deg, #f8f7f9, #415a77);
+#gradient {
+    background: linear-gradient(136deg, #5d949b, #d8dbab);
     background-size: 400% 400%;
 
-    -webkit-animation: background 20s ease infinite;
-    -moz-animation: background 20s ease infinite;
-    animation: background 20s ease infinite;
+    -webkit-animation: background 8s ease infinite;
+    -moz-animation: background 8s ease infinite;
+    animation: background 8s ease infinite;
+}
+
+#particles {
+    height: 100%;
+    width: 100%;
 }
 
 .border-box {
@@ -87,7 +95,7 @@ body {
 #title {
     font: bold;
     font-family: 'CircularStd';
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .fadeInDown {
@@ -102,23 +110,29 @@ body {
 
 #mainTitle {
     font-size: 110px;
+    margin-bottom: 3%;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+
 }
 
 .blueTitle {
     
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 
-.subTitle {
-    font-size: 32px;
+.subtitle {
+    font-size: 25px;
+    font-family: 'Abel' !important;
 }
 
 #slogan {
+    font-family: 'Abel' !important;
     font-size: 45px;
+    margin-bottom: 2%;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
@@ -131,15 +145,21 @@ body {
     float: right;
 }
 
+.fp-controlArrow {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    border-radius: 10px !important;
+}
+
 #attendee {
-    background-color: gainsboro;
+    background-color: rgb(65, 90, 119);
+    color: gainsboro;
+    margin-bottom: 3%;
     border-radius: 15px;
     border: none;
-    color:var(--text-color);
     padding: 16px 32px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 2px;
     opacity: 0.8;
     transition: 0.3s;
     transition: all 0.5s;
@@ -211,20 +231,21 @@ body {
   #section6 {
       background-color: var(--paper-color);
   }
+
   @-webkit-keyframes background {
-    0%{background-position:0% 40%}
-    50%{background-position:100% 61%}
-    100%{background-position:0% 40%}
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
 }
 @-moz-keyframes background {
-    0%{background-position:0% 40%}
-    50%{background-position:100% 61%}
-    100%{background-position:0% 40%}
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
 }
 @keyframes background {
-    0%{background-position:0% 40%}
-    50%{background-position:100% 61%}
-    100%{background-position:0% 40%}
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
 }
 
 @media screen and (max-width: 992px) {
