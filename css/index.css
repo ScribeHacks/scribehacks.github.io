@@ -133,6 +133,15 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  font-family: "CircularStd", sans-serif;
+}
+
+.section-title {
+  font-size: 30px;
+  color: var(--bg-color);
+}
+
 /* FAQ Accordion Component */
 .accordion {
   background-color: var(--cool-color);
@@ -171,6 +180,32 @@ body {
   .panel .panel {
     font-size: 15px;
   }
+}
+
+/* New accordion component*/
+.neocordion {
+  background-color: var(--cool-color);
+  color: var(--text-color);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.neocordion summary {
+  font-size: 30px;
+  padding: 20px;
+}
+.neocordion .neocordion-answer {
+  background-color: var(--paper-color);
+  font-size: 24px;
+  padding: 20px;
+}
+.neocordion:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.neocordion:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 /* Event schedule component */

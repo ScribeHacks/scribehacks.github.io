@@ -40,3 +40,36 @@
     }
   }
 }
+
+/* New accordion component*/
+
+.neocordion {
+  background-color: var(--cool-color);
+  color: var(--text-color);
+
+  width: 50%;
+  margin: auto;
+
+  text-align: center;
+
+  summary {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .neocordion-answer {
+    background-color: var(--paper-color);
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  &:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

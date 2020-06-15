@@ -7,3 +7,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+:root {
+  font-family: 'CircularStd', sans-serif;
+}
+
+.section-title {
+  font-size: 30px;
+  color: var(--bg-color);
+}
