@@ -1,261 +1,300 @@
 :root {
-    /* Light Mode Colors */
-    --bg-color: #F8F7F9; 
-    --text-color: #2B2D42;
-    --cool-color: #92DCE5;
-    --button-color: #415A77;
-    --paper-color: #DBCDC6;
-    }
-
-    #fp-nav ul li a span, .fp-slidesNav ul li a span {
-        background: #363635;
-    }
-
-@font-face {
-    font-family: 'CircularStd';
-    src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/CircularStd-Black.woff') format('woff'), url('../fonts/CircularStd-Black.ttf')  format('truetype'), url('../fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-60px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  /* Light Mode Colors */
+  --bg-color: #F8F7F9;
+  --text-color: #2B2D42;
+  --cool-color: #92DCE5;
+  --button-color: #415A77;
+  --paper-color: #DBCDC6;
 }
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    0% {
-       opacity: 0;
-       transform: translateX(-20px);
-    }
-    100% {
-       opacity: 1;
-       transform: translateX(0);
-    }
- }   
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    text-align: center;
-    /* width: 100vh;
-    height: 500%; */
-    display: inline-block;
-    margin: auto;
-    padding: 25vh;
-    height: 100%;
-    width: 100%;
-    word-wrap: break-word;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: inline-block;
+  margin: auto;
+  padding: 25vh;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
 }
 
-#frontPage {
-    /* color: var(--text-color); */
-    text-align: center;
-    height: 100%;
-    z-index: 10;
-}
-
-#gradient {
-    background: linear-gradient(136deg, #5d949b, #d8dbab);
-    background-size: 400% 400%;
-
-    -webkit-animation: background 8s ease infinite;
-    -moz-animation: background 8s ease infinite;
-    animation: background 8s ease infinite;
-}
-
-#particles {
-    height: 100%;
-    width: 100%;
-}
-
-.border-box {
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-bottom: 2%;
-}
-
-#title {
-    font: bold;
-    font-family: 'CircularStd';
-    padding-top: 2%;
-}
-
-.fadeInDown {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
-#mainTitle {
-    font-size: 110px;
-    margin-bottom: 3%;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-
-}
-
-.blueTitle {
-    
-    padding-top: 5%;
-    padding-bottom: 2%;
-}
-
-.subtitle {
-    font-size: 25px;
-    font-family: 'Abel' !important;
-}
-
-#slogan {
-    font-family: 'Abel' !important;
-    font-size: 45px;
-    margin-bottom: 2%;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.event-schedule {
-    max-width: 50%;
-    background-color: black;
-    float: right;
+/* Fullpage CSS Overrides */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #363635;
 }
 
 .fp-controlArrow {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-    border-radius: 10px !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  border-radius: 10px !important;
 }
 
-#attendee {
-    background-color: rgb(65, 90, 119);
-    color: gainsboro;
-    margin-bottom: 3%;
-    border-radius: 15px;
-    border: none;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    opacity: 0.8;
-    transition: 0.3s;
-    transition: all 0.5s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    text-rendering: auto;
-    text-decoration: solid;
-    position: static;
-}
-
-#attendee:hover {
+/* Keyframe animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
     opacity: 1;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(0);
+  }
 }
-
-
-.accordion {
-    background-color: var(--cool-color);
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 15px 10px 30px 30px;
-    width: 50%;
-    text-align: center;
-    font-size: 30px;
-    transition: 0.4s;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
   }
-  
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-right: 30px;
-    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .active:after {
-    content: "\2212";
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
-  
-  .panel {
-    padding: 0 0 0 0; 
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    width: 50%;
-    font-size: 25px;
-    background-color: var(--paper-color);
-    margin-left: 25%;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-
-  #section2 {
-      background-color: var(--cool-color);
+}
+@-webkit-keyframes background {
+  0% {
+    background-position: 0% 14%;
   }
-
-  #section3 {
-      background-color: var(--button-color);
+  50% {
+    background-position: 100% 87%;
   }
-  
-  #section4 {
-      background-color: var(--button-color);
+  100% {
+    background-position: 0% 14%;
   }
-
-  #section5 {
-      background-color: var(--paper-color);
-  }
-
-  #section6 {
-      background-color: var(--paper-color);
-  }
-
-  @-webkit-keyframes background {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
 }
 @-moz-keyframes background {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
 }
 @keyframes background {
-    0%{background-position:0% 14%}
-    50%{background-position:100% 87%}
-    100%{background-position:0% 14%}
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+/* HTML Helpers */
+.fadeInDown {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
-@media screen and (max-width: 992px) {
-    .accordion {
-        width: 100%;
-    }
-    .panel {
-        font-size: 15px;
-    }
-    #mainTitle {
-        font-size: 1px;
-    }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
+
+/* Layout styles */
+#section2 {
+  background-color: var(--cool-color);
+}
+
+#section3 {
+  background-color: var(--button-color);
+}
+
+#section4 {
+  background-color: var(--button-color);
+}
+
+#section5 {
+  background-color: var(--paper-color);
+}
+
+#section6 {
+  background-color: var(--paper-color);
+}
+
+/* Typography */
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype"), url("../fonts/CircularStd-Black.svg#CircularStd-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-family: "CircularStd", sans-serif;
+}
+
+.section-title {
+  font-size: 30px;
+  color: var(--bg-color);
+}
+
+/* FAQ Accordion Component */
+.accordion {
+  background-color: var(--cool-color);
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 15px 10px 30px 30px;
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  transition: 0.4s;
+}
+.accordion:after {
+  content: "+";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-right: 30px;
+}
+@media screen and (max-width: 992px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+.panel {
+  background-color: var(--paper-color);
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 50%;
+  font-size: 25px;
+  margin-left: 25%;
+}
+@media screen and (max-width: 992px) {
+  .panel .panel {
+    font-size: 15px;
+  }
+}
+
+/* New accordion component*/
+.neocordion {
+  background-color: var(--cool-color);
+  color: var(--text-color);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.neocordion summary {
+  font-size: 30px;
+  padding: 20px;
+}
+.neocordion .neocordion-answer {
+  background-color: var(--paper-color);
+  font-size: 24px;
+  padding: 20px;
+}
+.neocordion:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.neocordion:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Event schedule component */
+.event-schedule {
+  max-width: 50%;
+  background-color: black;
+  float: right;
+}
+
+/* Front page header */
+.header-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.header-wrapper > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.header-wrapper #gradient {
+  background: linear-gradient(136deg, #5d949b, #8bb4b9);
+  background-size: 400% 400%;
+  -webkit-animation: background 8s ease infinite;
+  -moz-animation: background 8s ease infinite;
+  animation: background 8s ease infinite;
+}
+.header-wrapper #frontPage {
+  /* color: var(--text-color); */
+  text-align: center;
+  font-weight: bold;
+  font-family: "CircularStd";
+  z-index: 10;
+  padding-top: 7%;
+  padding-bottom: 4%;
+}
+.header-wrapper #frontPage .border-box {
+  margin: 0 10%;
+}
+.header-wrapper #frontPage #mainTitle {
+  font-size: 110px;
+  margin-bottom: 3%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@media screen and (max-width: 992px) {
+  .header-wrapper #frontPage #mainTitle {
+    font-size: 16px;
+  }
+}
+.header-wrapper #frontPage #slogan {
+  font-family: "Abel" !important;
+  font-size: 45px;
+  margin-bottom: 2%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.header-wrapper #frontPage .subtitle {
+  font-size: 25px;
+  font-family: "Abel" !important;
+}
+
+/* Register button on front page */
+#register-cta {
+  background-color: #415a77;
+  color: gainsboro;
+  margin-bottom: 3%;
+  border-radius: 15px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: all 0.5s;
+  display: inline-block;
+  cursor: pointer;
+  text-rendering: auto;
+  text-decoration: solid;
+  position: static;
+}
+#register-cta:hover {
+  opacity: 1;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*# sourceMappingURL=index.css.map */

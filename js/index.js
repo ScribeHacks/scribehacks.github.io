@@ -128,6 +128,7 @@ function initTimeTable() {
     renderer.draw('.timetable');
 }
 
+// Accordion expansion code
 var acc = document.getElementsByClassName("accordion");
 var i;
 var toggled = document.getElementsByClassName("active");
@@ -143,3 +144,5 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+// TODO: Write neocordion EdgeHTML polyfill
