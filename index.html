@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScribeHacks I</title>
     <meta name="description" content="Write the code of the future.">
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/timetablejs.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/table.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 </head>
 <body>
-    <main id="fullpage">
+    <main class="scroll-snap">
         <section class="section" id="section1">
             <div class="header-wrapper">
                 <div id="gradient"></div>
@@ -139,7 +138,7 @@
             </div>
         </section>
         
-        <section class="section" id="section3">
+        <section class="section section-row" id="section3">
             <div class="slide">
                 <h1 class="section-title">FAQ</h1>
                 <details class="neocordion">
@@ -218,7 +217,7 @@
 
         <section class="section" id="section4">
             <div class="teampage1">
-                <h1 id="teamPageTitle" style="text-align: center">Meet The Team!</h1>
+                <h1 class="section-title">Meet the Team</h1>
                 <img src="img/profile-icon.jpg" alt="Team Member" width="300" height="200"> 
                 <h3 id="nameofheadorganizer" style="text-align: center">[Add Name Here] : Head Organizer</h3>
                 <!-- Logistics Team -->
@@ -254,12 +253,10 @@
                     </tr>
                 </table>
             </div>
-        </section>
-
-        <section class="section" id="section5">
+            <br>
             <div class="teampage2">
                 <!-- Tech Team -->
-            <h2 style="text-align: center;font-size: 200%">Tech Team</h2>
+                <h1 class="section-title">Tech Team</h1>
             <table style="width: 100%">
                 <tr >
                     <td>
@@ -280,7 +277,7 @@
                 </tr>
             </table>
             <!-- Outreach Team -->
-            <h2 style="text-align: center;font-size: 200%">Outreach Team</h2>
+                <h1 class="section-title">Outreach Team</h1>
             <table style="width: 100%">
                 <tr >
                     <td>
@@ -302,7 +299,6 @@
     
 
 <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
-<script src="js/fullpage.js"></script>
 <script src="js/typewriter.js"></script>
 <script src="js/timetable.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>

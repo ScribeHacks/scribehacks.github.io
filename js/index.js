@@ -1,16 +1,3 @@
-new fullpage('#fullpage', {
-    navigation: true,
-    navigationPosition: 'right',
-    controlArrows: true,
-
-    slidesNavigation: true,
-	  slidesNavPosition: 'bottom',
-
-    easing: 'easeInOutCubic',
-	  easingcss3: 'ease',
-});
-
-
 particlesJS("particles", {
   "particles": {
     "number": {
