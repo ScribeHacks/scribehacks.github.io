@@ -23,7 +23,7 @@ main {
 
 .section {
   box-shadow: #000a 5px 0 10px; // TEMP
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 

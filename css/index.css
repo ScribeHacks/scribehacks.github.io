@@ -98,6 +98,7 @@ body {
 }
 
 main {
+  margin: 0;
   height: 100vh;
   position: relative;
 }
@@ -116,15 +117,7 @@ main {
   background-color: var(--button-color);
 }
 
-#section4 {
-  background-color: var(--paper-color);
-}
-
-#section5 {
-  background-color: var(--paper-color);
-}
-
-#section6 {
+#section4, #section5 {
   background-color: var(--paper-color);
 }
 
