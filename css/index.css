@@ -207,14 +207,6 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
-/* Event schedule component */
-.event-schedule {
-  max-width: 50%;
-  background-color: black;
-  float: right;
-}
-
 /* Front page header */
 .header-wrapper {
   position: relative;
