@@ -6,3 +6,14 @@
   background-color: black;
   float: right;
 }
+
+@media screen and (max-width: 992px) {
+  .table-row {
+    justify-content: center;
+    overflow: hidden;
+  }
+  .col {
+    justify-content: center;
+    overflow: hidden;
+  }
+}
