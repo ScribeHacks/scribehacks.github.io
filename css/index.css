@@ -145,23 +145,33 @@ main {
 
 /* Scroll snapping - nonessential CSS component, replaces fullpage */
 /* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
-.scroll-snap {
-  overflow: auto;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: both proximity;
+
+@media only screen and (min-width: 992px) {
+  .scroll-snap {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: both proximity;
+  }
+  .scroll-snap .section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    position: relative;
+  }
+  .scroll-snap .section.section-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.scroll-snap .section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-  position: relative;
+
+@media only screen and (max-width: 992px) {
+  #logo {
+    width: 30%;
+  }
 }
-.scroll-snap .section.section-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* New accordion component*/
 .neocordion {
@@ -233,7 +243,7 @@ main {
 }
 @media screen and (max-width: 992px) {
   .header-wrapper #frontPage #mainTitle {
-    font-size: 16px;
+    font-size: 40px;
   }
 }
 .header-wrapper #frontPage #slogan {
