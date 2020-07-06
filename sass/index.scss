@@ -7,28 +7,13 @@
   --paper-color: #DBCDC6;
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  display: inline-block;
-  margin: auto;
-  padding: 25vh;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-// FP Overrides
-@import './util/customization';
-
 // Utilities
 @import './util/animations';
 @import './util/layout';
 @import './util/typography';
+@import './util/scroll-snap';
 
 // Components
 @import './components/accordion';
-@import './components/event-schedule';
 @import './components/header';
 @import './components/register-cta';

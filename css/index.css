@@ -7,29 +7,6 @@
   --paper-color: #DBCDC6;
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  display: inline-block;
-  margin: auto;
-  padding: 25vh;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-/* Fullpage CSS Overrides */
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background: #363635;
-}
-
-.fp-controlArrow {
-  padding-left: 5% !important;
-  padding-right: 5% !important;
-  border-radius: 10px !important;
-}
-
 /* Keyframe animations */
 @keyframes fadeInDown {
   0% {
@@ -106,6 +83,32 @@ body {
 }
 
 /* Layout styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+main {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+
+.section {
+  box-shadow: #000a 5px 0 10px;
+  min-height: 100vh;
+  position: relative;
+}
+
 #section2 {
   background-color: var(--cool-color);
 }
@@ -114,15 +117,7 @@ body {
   background-color: var(--button-color);
 }
 
-#section4 {
-  background-color: var(--button-color);
-}
-
-#section5 {
-  background-color: var(--paper-color);
-}
-
-#section6 {
+#section4, #section5 {
   background-color: var(--paper-color);
 }
 
@@ -140,6 +135,8 @@ body {
 .section-title {
   font-size: 30px;
   color: var(--bg-color);
+  margin: 0;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -155,41 +152,37 @@ body {
 .accordion {
   background-color: var(--cool-color);
   color: var(--text-color);
-  cursor: pointer;
-  padding: 15px 10px 30px 30px;
-  width: 50%;
-  text-align: center;
-  font-size: 30px;
-  transition: 0.4s;
 }
-.accordion:after {
-  content: "+";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-right: 30px;
-}
-@media screen and (max-width: 992px) {
-  .accordion {
-    width: 100%;
+
+/* Scroll snapping - nonessential CSS component, replaces fullpage */
+/* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
+
+@media only screen and (min-width: 992px) {
+  .scroll-snap {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: both proximity;
+  }
+  .scroll-snap .section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    position: relative;
+  }
+  .scroll-snap .section.section-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.panel {
-  background-color: var(--paper-color);
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  width: 50%;
-  font-size: 25px;
-  margin-left: 25%;
-}
-@media screen and (max-width: 992px) {
-  .panel .panel {
-    font-size: 15px;
+@media only screen and (max-width: 992px) {
+  #logo {
+    width: 30%;
   }
 }
+
 
 /* New accordion component*/
 .neocordion {
@@ -216,9 +209,12 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 /* Front page header */
 .header-wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
 }
