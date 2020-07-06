@@ -139,7 +139,18 @@ main {
   padding: 20px 0;
 }
 
-.text-dark {
+@media screen and (max-width: 992px) {
+  #logo {
+    width: 40% !important;
+  }
+}
+
+#logo {
+  width: 15%;
+}
+/* FAQ Accordion Component */
+.accordion {
+  background-color: var(--cool-color);
   color: var(--text-color);
 }
 
@@ -241,7 +252,7 @@ main {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 800px) {
   .header-wrapper #frontPage #mainTitle {
     font-size: 40px;
   }
