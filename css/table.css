@@ -67,6 +67,32 @@
       text-align: center;
     }
   }
+  @media (max-width: 375px) {
+    .responsive-table .table-header {
+      display: none;
+    }
+    .responsive-table li {
+      display: block;
+      padding: 10% 100% 10% 10%;
+    }
+    .responsive-table .col {
+      flex-basis: 100%;
+    }
+    .responsive-table .col {
+      display: flex;
+      padding: 5px 0;
+    }
+    .responsive-table .col:before {
+      color: #6C7A89;
+      padding-right: 5px;
+      /* content: attr(data-label); */
+      flex-basis: 50%;
+      text-align: right;
+    }
+    .col {
+      text-align: center;
+    }
+  }
 
 .event-schedule-1 {
     width: 40%;
