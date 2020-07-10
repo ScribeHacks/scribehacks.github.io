@@ -152,6 +152,7 @@ main {
   -webkit-box-shadow: #000a 5px 0 10px;
           box-shadow: #000a 5px 0 10px;
   min-height: 100vh;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -185,60 +186,29 @@ main {
   padding: 20px 0;
 }
 
-@media screen and (max-width: 992px) {
-  #logo {
-    width: 40% !important;
-  }
-}
-
-#logo {
-  width: 15%;
-}
-/* FAQ Accordion Component */
-.accordion {
-  background-color: var(--cool-color);
+.text-dark {
   color: var(--text-color);
 }
 
 /* Scroll snapping - nonessential CSS component, replaces fullpage */
 /* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
-
-@media only screen and (min-width: 992px) {
-  .scroll-snap {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    -ms-scroll-snap-type: both proximity;
-        scroll-snap-type: both proximity;
-  }
-  .scroll-snap .section {
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
-    position: relative;
-  }
-  .scroll-snap .section.section-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.scroll-snap {
+  overflow: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: both proximity;
 }
-
-@media only screen and (max-width: 992px) {
-  #logo {
-    width: 30%;
-  }
+.scroll-snap .section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  position: relative;
 }
-
+.scroll-snap .section.section-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 /* New accordion component*/
 .neocordion {
@@ -308,9 +278,9 @@ main {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   .header-wrapper #frontPage #mainTitle {
-    font-size: 40px;
+    font-size: 16px;
   }
 }
 .header-wrapper #frontPage #slogan {
@@ -325,6 +295,76 @@ main {
 .header-wrapper #frontPage .subtitle {
   font-size: 25px;
   font-family: "Abel" !important;
+}
+
+/* Team member images */
+.team-members-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 768px;
+  padding: 0 10px;
+}
+.team-members-wrapper li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.team-members-wrapper li img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.team-members-wrapper li p {
+  font-size: 24px;
+}
+.team-members-wrapper .team-member-head {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.team-members-wrapper .team-member-head .head-description {
+  display: flex;
+  flex-direction: column;
+}
+.team-members-wrapper .team-member-head .head-description h2 {
+  margin-bottom: 0;
+  font-size: 32px;
+}
+@media (min-width: 768px) {
+  .team-members-wrapper .team-member-head {
+    flex-direction: row;
+  }
+  .team-members-wrapper .team-member-head img {
+    margin: 0;
+    margin-right: 50px;
+  }
+  .team-members-wrapper .team-member-head .head-description {
+    text-align: left;
+  }
+  .team-members-wrapper .team-member-head .head-description h2 {
+    margin-top: 0;
+  }
+}
+.team-members-wrapper .team-member {
+  max-width: 100%;
+}
+@media (min-width: 512px) {
+  .team-members-wrapper .team-member {
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .team-members-wrapper .team-member {
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .team-members-wrapper {
+    justify-content: space-between;
+  }
 }
 
 /* Register button on front page */
