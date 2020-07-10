@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root {
   /* Light Mode Colors */
   --bg-color: #F8F7F9;
@@ -8,48 +22,79 @@
 }
 
 /* Keyframe animations */
-@keyframes fadeInDown {
+@-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(35px);
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @-webkit-keyframes background {
-  0% {
-    background-position: 0% 14%;
-  }
-  50% {
-    background-position: 100% 87%;
-  }
-  100% {
-    background-position: 0% 14%;
-  }
-}
-@-moz-keyframes background {
   0% {
     background-position: 0% 14%;
   }
@@ -104,7 +149,8 @@ main {
 }
 
 .section {
-  box-shadow: #000a 5px 0 10px;
+  -webkit-box-shadow: #000a 5px 0 10px;
+          box-shadow: #000a 5px 0 10px;
   min-height: 100vh;
   position: relative;
 }
@@ -162,7 +208,8 @@ main {
     overflow: auto;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: both proximity;
+    -ms-scroll-snap-type: both proximity;
+        scroll-snap-type: both proximity;
   }
   .scroll-snap .section {
     scroll-snap-align: start;
@@ -170,10 +217,19 @@ main {
     position: relative;
   }
   .scroll-snap .section.section-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -226,10 +282,10 @@ main {
   height: 100%;
 }
 .header-wrapper #gradient {
+  background: -o-linear-gradient(314deg, #5d949b, #8bb4b9);
   background: linear-gradient(136deg, #5d949b, #8bb4b9);
   background-size: 400% 400%;
   -webkit-animation: background 8s ease infinite;
-  -moz-animation: background 8s ease infinite;
   animation: background 8s ease infinite;
 }
 .header-wrapper #frontPage {
@@ -282,16 +338,18 @@ main {
   text-align: center;
   font-size: 16px;
   opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   display: inline-block;
   cursor: pointer;
   text-rendering: auto;
-  text-decoration: solid;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
   position: static;
 }
 #register-cta:hover {
   opacity: 1;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
-/*# sourceMappingURL=index.css.map */
