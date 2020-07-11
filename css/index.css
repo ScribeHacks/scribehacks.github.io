@@ -112,6 +112,7 @@ main {
 
 #section2 {
   background-color: var(--cool-color);
+  justify-content: center;
 }
 
 #section3 {
@@ -231,7 +232,7 @@ main {
   height: 100%;
   width: 100%;
 }
-.header-wrapper > div {
+.header-wrapper > div:not(#frontPage) {
   position: absolute;
   top: 0;
   left: 0;
