@@ -1,4 +1,3 @@
-
 /* Layout styles */
 
 body {
@@ -34,8 +33,14 @@ main {
 
 #section3 {
   background-color: var(--button-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
-#section4, #section5 {
+#section4,
+#section5 {
   background-color: var(--paper-color);
 }
