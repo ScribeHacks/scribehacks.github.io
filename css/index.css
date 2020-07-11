@@ -219,12 +219,10 @@ main {
   text-align: center;
 }
 .neocordion summary {
-  font-size: 30px;
   padding: 20px;
 }
 .neocordion .neocordion-answer {
   background-color: var(--paper-color);
-  font-size: 24px;
   padding: 20px;
 }
 .neocordion:first-of-type {
@@ -280,7 +278,11 @@ main {
 }
 @media screen and (max-width: 992px) {
   .header-wrapper #frontPage #mainTitle {
-    font-size: 16px;
+    font-size: 44px;
+  }
+
+  #logo {
+    width: 120px;
   }
 }
 .header-wrapper #frontPage #slogan {
@@ -392,4 +394,22 @@ main {
   opacity: 1;
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 900px) {
+   .neocordion-answer {
+    font-size: 18px;
+  }
+  .neocordion summary {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .neocordion-answer {
+   font-size: 24px;
+ }
+ .neocordion summary {
+   font-size: 24px;
+ }
 }
