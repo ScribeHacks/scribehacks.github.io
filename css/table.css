@@ -17,6 +17,8 @@ h2 small {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  width: 328.55px;
+  height: 62px;
 }
 .responsive-table .table-header {
   background-color: #95A5A6;
@@ -40,13 +42,13 @@ h2 small {
 .responsive-table .col-4 {
   flex-basis: 25%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .responsive-table .table-header {
     display: none;
   }
   .responsive-table li {
     display: block;
-    padding: 10% 100% 10% 10%;
+    padding: 40px 8px;
   }
   .responsive-table .col {
     flex-basis: 100%;
@@ -64,6 +66,13 @@ h2 small {
   }
   .col {
     text-align: center;
+  }
+  #section2{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #section{
+
   }
 }
 @media (max-width: 375px) {
@@ -90,12 +99,17 @@ h2 small {
   }
   .col {
     text-align: center;
+  }  
+  #section2{
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
   #section2{
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
