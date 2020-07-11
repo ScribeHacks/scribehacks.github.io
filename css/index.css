@@ -158,11 +158,13 @@ main {
 
 #section2 {
   background-color: var(--cool-color);
+
 }
 
 @media screen and (max-width: 992px) {
   #section2 {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   #section3 {
@@ -176,6 +178,7 @@ main {
 @media screen and (min-width: 992px) {
   #section2 {
     flex-direction: row;
+    justify-content: space-evenly;
   }
   #section3 {
     flex-direction: row;
@@ -370,6 +373,7 @@ main {
   .team-members-wrapper .team-member-head .head-description h2 {
     margin-top: 0;
   }
+
 }
 .team-members-wrapper .team-member {
   max-width: 100%;
