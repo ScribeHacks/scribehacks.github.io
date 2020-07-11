@@ -2,21 +2,22 @@
 /* Register button on front page */
 
 #register-cta {
+  display: inline-block;
+  position: static;
+
   background-color: rgb(65, 90, 119);
-  color: gainsboro;
-  margin-bottom: 3%;
   border-radius: 15px;
   border: none;
-  padding: 16px 32px;
+  color: gainsboro;
+  cursor: pointer;
   text-align: center;
   font-size: 16px;
-  opacity: 0.8;
-  transition: all 0.5s;
-  display: inline-block;
-  cursor: pointer;
   text-rendering: auto;
   text-decoration: solid;
-  position: static;
+
+  margin-bottom: 3%;
+  padding: 16px 32px;
+  transition: all 0.5s;
 
   &:hover {
     opacity: 1;

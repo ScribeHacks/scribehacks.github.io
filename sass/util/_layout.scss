@@ -3,42 +3,26 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  display: inline-block;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  word-wrap: break-word;
+  overflow: hidden;
 }
 
 main {
-  margin: 0;
-  height: 100vh;
-  position: relative;
+  max-height: 100vh;
 }
 
 .section {
-  box-shadow: #000a 5px 0 10px; // TEMP
+  box-shadow: #000a 5px 0 10px;
   min-height: 100vh;
-  padding: 30px 0;
   position: relative;
+  padding: 30px 15px;
 }
 
 #section2 {
   background-color: var(--cool-color);
-  justify-content: center;
 }
 
 #section3 {
   background-color: var(--button-color);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
 }
 
 #section4,

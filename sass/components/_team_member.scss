@@ -2,18 +2,14 @@
 /* Team member images */
 .team-members-wrapper {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   margin: auto;
   margin-top: 50px;
   max-width: 768px;
   padding: 0 10px;
 
   li {
-    display: flex;
-    flex-direction: column;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     img {
       width: 200px;
@@ -31,8 +27,7 @@
     margin-bottom: 50px;
 
     .head-description {
-      display: flex;
-      flex-direction: column;
+      text-align: center;
 
       h2 {
         margin-bottom: 0;

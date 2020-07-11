@@ -13,8 +13,11 @@
 @import './util/typography';
 @import './util/scroll-snap';
 
+// Sections
+@import './sections/header';
+
 // Components
-@import './components/accordion';
-@import './components/header';
+@import './components/neocordion';
+@import './components/schedule';
 @import './components/team_member';
 @import './components/register-cta';

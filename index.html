@@ -6,348 +6,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScribeHacks I</title>
     <meta name="description" content="Write the code of the future.">
-    <link rel="stylesheet" type="text/css" href="css/timetablejs.css">
+    <link rel="stylesheet" type="text/css" href="lib/flexkit.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
+
+    <link rel="stylesheet" type="text/css" href="css/timetablejs.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="css/hover.css" />
 </head>
 
 <body>
     <main class="scroll-snap">
         <section class="section" id="section1">
-            <div class="header-wrapper">
-                <div id="gradient"></div>
-                <div id="particles"></div>
-                <div id="frontPage">
-                    <div class="border-box">
-                        <img src="img/logo.png" alt="ScribeHacks Logo" id="logo">
-                        <h1 id="mainTitle" class="fadeInDown">ScribeHacks I</h1>
-                        <h2 id="slogan" class="fadeInUp">Write the Code of the Future</h2>
+            <div id="particles"></div>
+            <div id="frontPage" class="flex-column align-center justify-center">
+                <img src="img/logo.png" alt="ScribeHacks Logo" id="logo">
+                <h1 id="mainTitle" class="fadeInDown">ScribeHacks I</h1>
+                <h2 id="slogan" class="fadeInUp">Write the Code of the Future</h2>
 
-                        <a type="button" class="registerButton" id="register-cta"
-                            href="https://my.mlh.io/oauth/authorize?client_id=f3f66e487f904efac28b5e7102003df0c471ffdb534d3116b828d8c6927f7cf1&redirect_uri=https://scribehacks.github.io/scribehacks.tech/success.html&response_type=token&scope=email+event+birthday">Attendee
-                            Registration</a>
-                        <h2 id="info-text1" class="subtitle"></h2>
-                        <h2 id="info-text2" class="subtitle"></h2>
-                        <h2 id="info-text3" class="subtitle"></h2>
-                    </div>
-                </div>
+                <a id="register-cta"
+                    href="https://my.mlh.io/oauth/authorize?client_id=f3f66e487f904efac28b5e7102003df0c471ffdb534d3116b828d8c6927f7cf1&redirect_uri=https://scribehacks.github.io/scribehacks.tech/success.html&response_type=token&scope=email+event+birthday">Attendee
+                    Registration</a>
+                <h2 id="info-text1" class="subtitle"></h2>
+                <h2 id="info-text2" class="subtitle"></h2>
+                <h2 id="info-text3" class="subtitle"></h2>
             </div>
         </section>
 
-        <section class="section" id="section2">
-            <div class="event-schedule-1">
-                <div class="container">
+        <section class="section flex-column align-center justify-center" id="section2">
+            <h2 class="section-title text-dark">The Schedule</h2>
+            <br>
+            <div class="flex-smart flex-list">
+                <div class="flex-column align-center">
                     <h2>Saturday</h2>
                     <ul class="responsive-table">
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">8:00 AM</div>
-                        <div class="col col-2" data-label="Event">Doors Open, Check In</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">9:00 AM</div>
-                        <div class="col col-2" data-label="Event">Opening Ceremony</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">10:00 AM</div>
-                        <div class="col col-2" data-label="Event">Hacking Begins</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">1:00 PM</div>
-                        <div class="col col-2" data-label="Event">Lunch</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">4:00 PM</div>
-                        <div class="col col-2" data-label="Event">Capture The Flag (Digital)</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">7:00 PM</div>
-                        <div class="col col-2" data-label="Event">Dinner</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">8:00 PM</div>
-                        <div class="col col-2" data-label="Event">Super Smash Bros Tournament</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">12:00 AM</div>
-                        <div class="col col-2" data-label="Event">Midnight Snack</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
+                        <li class="flex-row">
+                            <div class="col-1">8:00 AM</div>
+                            <div class="col-2">Doors Open, Check In</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">9:00 AM</div>
+                            <div class="col-2">Opening Ceremony</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">10:00 AM</div>
+                            <div class="col-2">Hacking Begins</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">1:00 PM</div>
+                            <div class="col-2">Lunch</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">4:00 PM</div>
+                            <div class="col-2">Capture The Flag (Digital)</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">7:00 PM</div>
+                            <div class="col-2">Dinner</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">8:00 PM</div>
+                            <div class="col-2">Super Smash Bros Tournament</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">12:00 AM</div>
+                            <div class="col-2">Midnight Snack</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="event-schedule-1">
-                <div class="container">
+                <div class="flex-column align-center">
                     <h2>Sunday</h2>
                     <ul class="responsive-table">
-                      
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">12:00 AM</div>
-                        <div class="col col-2" data-label="Event">Midnight Snack</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">2:00 AM</div>
-                        <div class="col col-2" data-label="Event">Cup Stacking Tournament</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">3:00 AM</div>
-                        <div class="col col-2" data-label="Event">Movie Vote</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">3:30 AM</div>
-                        <div class="col col-2" data-label="Event">Movie</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">7:00 AM</div>
-                        <div class="col col-2" data-label="Event">Breakfast</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">10:00 AM</div>
-                        <div class="col col-2" data-label="Event">Hacking Ends, Judges Arrive</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">10:30 AM</div>
-                        <div class="col col-2" data-label="Event">Judging</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
-                      <li class="table-row hvr-bob">
-                        <div class="col col-1" data-label="Time">1:30 PM</div>
-                        <div class="col col-2" data-label="Event">Winner Showcase and Prizes</div>
-                        <div class="col col-3" data-label="Where">Pending</div>
-                      </li>
+                        <li class="flex-row">
+                            <div class="col-1">12:00 AM</div>
+                            <div class="col-2">Midnight Snack</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">2:00 AM</div>
+                            <div class="col-2">Cup Stacking Tournament</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">3:00 AM</div>
+                            <div class="col-2">Movie Vote</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">3:30 AM</div>
+                            <div class="col-2">Movie</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">7:00 AM</div>
+                            <div class="col-2">Breakfast</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">10:00 AM</div>
+                            <div class="col-2">Hacking Ends, Judges Arrive</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">10:30 AM</div>
+                            <div class="col-2">Judging</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
+                        <li class="flex-row">
+                            <div class="col-1">1:30 PM</div>
+                            <div class="col-2">Winner Showcase and Prizes</div>
+                            <div class="col-3 nav-right">Pending</div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="section3">
-            <h1 class="section-title">FAQ</h1>
-            <div class="slide">
-                <ul>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What if I am not in high school?</summary>
-                            <div class="neocordion-answer">
-                                <p>We allow those in middle school to join us, but with added parental permission.
-                                    If
-                                    you are in college you are welcome to mentor or give speeches at the hackathon.
-                                    If
-                                    you want to be a mentor, you can <a target="_blank" href="example.com">sign up
-                                        here</a> or if you want to sponsor you can email us at <a
-                                        href="mailto:sponsors@scribehacks.tech">sponsors@scribehacks.tech</a></p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What is the theme?</summary>
-                            <div class="neocordion-answer">
-                                <p>At ScribeHacks we want people to make something that will help the future instead
-                                    of
-                                    the present or past. While this is open ended, we believe that it will spark
-                                    creativity in each person to think about the future and write the code for it.
-                                    We
-                                    believe that by giving a theme that makes you think about the future, you will
-                                    better plan and develop for it. Whether you want to make an app that will track
-                                    the
-                                    energy being used to a robot that can help people who are suffering, we welcome
-                                    all
-                                    ideas and hacks that want to make the future of our world a better place.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>Who can Participate?</summary>
-                            <div class="neocordion-answer">
-                                <p>We welcome all middle school and high school students who have an interest in
-                                    coding
-                                    and making!</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What is a hackathon?</summary>
-                            <div class="neocordion-answer">
-                                <p>A hackathon is an event where participants use their knowledge and skills to
-                                    create,
-                                    develop, design, and pitch a solution to a particular problem over 24 hours.
-                                    They’re
-                                    open not just to programmers and engineers, but to anyone who’s interested in
-                                    working
-                                    together to find answers to the world’s most pressing problems.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What if I have never been to a hackathon before?</summary>
-                            <div class="neocordion-answer">
-                                <p>No matter what your skills are, we can use your help in ScribeHacks to help solve
-                                    for
-                                    a
-                                    better future. We believe that solutions are better when they integrate diverse
-                                    ways
-                                    of
-                                    thinking. There will be many opportunities to learn new skills or ideas at
-                                    workshops
-                                    and
-                                    from the people around you. We’ll also be holding team building events where you
-                                    can
-                                    meet new people. Just come eager to learn and share your own knowledge!</p>
-                            </div>
-                        </details>
-                    </li>
-                </ul>
-                <ul>
-                    <h1 class="section-title"></h1>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What does it cost to attend ScribeHacks?</summary>
-                            <div class="neocordion-answer">
-                                <p>ScribeHacks is absolutely free! There is no entry fee, ScribeHacks will provide
-                                    you
-                                    with
-                                    plenty of food, snacks, swag, and prizes throughout the 24 hours. We can provide
-                                    all
-                                    of
-                                    this
-                                    due to our wonderful sponsors!</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What should I bring?</summary>
-                            <div class="neocordion-answer">
-                                <p>Please bring a valid form of identification like a student id or driver's
-                                    license, a
-                                    computer
-                                    (preferably a laptop), chargers, and any hardware you will use for your hack.
-                                    You
-                                    can
-                                    also
-                                    bring a sleeping bag, pillow, toiletries, and a couple changes of clothes. Food
-                                    will
-                                    be
-                                    provided at the event. No firearms, weapons, alcohol, or illegal drugs are
-                                    allowed
-                                    on
-                                    campus.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>What should I do to prepare?</summary>
-                            <div class="neocordion-answer">
-                                <p>While you are not allowed to start coding or making the art for your project
-                                    until
-                                    the
-                                    hackathon starts, you can always find a team, register for the hacakthon, make
-                                    mockups
-                                    in
-                                    figma, xd, sketch, and get the materials needed to make your awesome project.
-                                </p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>Will there be travel reimbursements?</summary>
-                            <div class="neocordion-answer">
-                                <p>Unfortunately, travel reimbursements cost a lot of our sponsor money and can
-                                    provide
-                                    support
-                                    for only a few people. That is why we cannot offer travel reimbursements this
-                                    year.
-                                </p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="neocordion">
-                            <summary>Other questions?</summary>
-                            <div class="neocordion-answer">
-                                <p>If you have any other questions please ask the hackathon organizer, Soham on
-                                    Discord
-                                    (sohamb117#4342) or send us an email at, <a
-                                        href="mailto:support@scribehacks.tech">support@scribehacks.tech</a></p>
-                            </div>
-                        </details>
-                    </li>
-                </ul>
+        <section class="section flex-column align-center justify-center" id="section3">
+            <h2 class="section-title">FAQ</h2>
+            <br>
+            <div class="flex-smart flex-list container-wide px-0">
+                <div class="flex">
+                    <details class="neocordion">
+                        <summary>What if I am not in high school?</summary>
+                        <div class="neocordion-answer">
+                            <p>We allow those in middle school to join us, but with added parental permission. If you are in college you are welcome to mentor or give speeches at the hackathon. If you want to be a mentor, you can <a target="_blank" href="example.com">sign up here</a> or if you want to sponsor you can email us at <a href="mailto:sponsors@scribehacks.tech">sponsors@scribehacks.tech</a></p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>What is the theme?</summary>
+                        <div class="neocordion-answer">
+                            <p>At ScribeHacks we want people to make something that will help the future instead of the present or past. While this is open ended, we believe that it will spark creativity in each person to think about the future and write the code for it. We believe that by giving a theme that makes you think about the future, you will better plan and develop for it. Whether you want to make an app that will track the energy being used to a robot that can help people who are suffering, we welcome all ideas and hacks that want to make the future of our  world a better place.</p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>Who can Participate?</summary>
+                        <div class="neocordion-answer">
+                            <p>We welcome all middle school and high school students who have an interest in coding and making!</p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>What is a hackathon?</summary>
+                        <div class="neocordion-answer">
+                            <p>A hackathon is an event where participants use their knowledge and skills to create, develop, design, and pitch a solution to a particular problem over 24 hours. They’re open not just to programmers and engineers, but to anyone who’s interested in working together to find answers to the world’s most pressing problems.</p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>What if I have never been to a hackathon before?</summary>
+                        <div class="neocordion-answer">
+                            <p>No matter what your skills are, we can use your help in ScribeHacks to help solve for a better future. We believe that solutions are better when they integrate diverse ways of thinking. There will be many opportunities to learn new skills or ideas at workshops and from the people around you. We’ll also be holding team building events where you can meet new people. Just come eager to learn and share your own knowledge!</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="flex">
+                    <details class="neocordion">
+                        <summary>What does it cost to attend ScribeHacks?</summary>
+                        <div class="neocordion-answer">
+                            <p>ScribeHacks is absolutely free! There is no entry fee, ScribeHacks will provide you with plenty of food, snacks, swag, and prizes throughout the 24 hours. We can provide all of this due to our wonderful sponsors!</p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>What should I bring?</summary>
+                        <div class="neocordion-answer">
+                            <p>Please bring a valid form of identification like a student id or driver's license, a computer (preferably a laptop), chargers, and any hardware you will use for your hack. You can also bring a sleeping bag, pillow, toiletries, and a couple changes of clothes. Food will be provided at the event. No firearms, weapons, alcohol, or illegal drugs are allowed on campus.</p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>What should I do to prepare?</summary>
+                        <div class="neocordion-answer">
+                            <p>While you are not allowed to start coding or making the art for your project until the hackathon starts, you can always find a team, register for the hacakthon, make mockups in figma, xd, sketch, and get the materials needed to make your awesome project.</p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>Will there be travel reimbursements?</summary>
+                        <div class="neocordion-answer">
+                            <p>Unfortunately, travel reimbursements cost a lot of our sponsor money and can provide support for only a few people. That is why we cannot offer travel reimbursements this year.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="neocordion">
+                        <summary>Other questions?</summary>
+                        <div class="neocordion-answer">
+                            <p>If you have any other questions please ask the hackathon organizer, Soham on Discord (sohamb117#4342) or send us an email at <a href="mailto:support@scribehacks.tech">support@scribehacks.tech</a></p>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>
 
-        <section class="section" id="section4">
+        <section class="section flex-column align-center" id="section4">
             <h1 class="section-title text-dark">Meet the Teams!</h1>
             <br>
-            <ul class="team-members-wrapper">
-                <li class="team-member-head">
+            <ul class="team-members-wrapper flex-wrap justify-evenly">
+                <li class="team-member-head flex-smart">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <div class="head-description">
                         <h2>The Logistics Team</h2>
                         <p><b>Head Member</b></p>
                     </div>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
             </ul>
-            <ul class="team-members-wrapper">
-                <li class="team-member-head">
+            <ul class="team-members-wrapper flex-wrap justify-evenly">
+                <li class="team-member-head flex-smart">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <div class="head-description">
                         <h2>The Tech Team</h2>
                         <p><b>Head Member</b></p>
                     </div>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>
-                <li class="team-member">
+                <li class="team-member flex-column">
                     <img src="img/profile-icon.jpg" alt="Team Member">
                     <p><b>Member</b></p>
                 </li>

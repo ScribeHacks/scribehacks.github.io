@@ -11,13 +11,5 @@
   .section {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    position: relative;
-
-    &.section-row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
   }
 }
