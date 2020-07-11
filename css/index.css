@@ -133,7 +133,6 @@ body {
   color: var(--text-color);
   display: inline-block;
   margin: 0;
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -145,7 +144,6 @@ body {
 main {
   margin: 0;
   height: 100vh;
-  position: relative;
 }
 
 .section {
@@ -153,13 +151,34 @@ main {
           box-shadow: #000a 5px 0 10px;
   min-height: 100vh;
   padding: 30px 0;
-  position: relative;
+  display: flex;
 }
 
 #section2 {
   background-color: var(--cool-color);
 }
 
+@media screen and (max-width: 992px) {
+  #section2 {
+    flex-direction: row;
+  }
+
+  #section3 {
+    flex-direction: column;
+  }
+  #section4 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #section2 {
+    flex-direction: row;
+  }
+  #section3 {
+    flex-direction: row;
+  }
+}
 #section3 {
   background-color: var(--button-color);
 }
@@ -194,14 +213,12 @@ main {
 /* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
 .scroll-snap {
   overflow: auto;
-  position: relative;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: both proximity;
 }
 .scroll-snap .section {
   scroll-snap-align: start;
   scroll-snap-stop: normal;
-  position: relative;
 }
 .scroll-snap .section.section-row {
   display: flex;
@@ -236,7 +253,6 @@ main {
 
 /* Front page header */
 .header-wrapper {
-  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -388,7 +404,6 @@ main {
   text-rendering: auto;
   -webkit-text-decoration: solid;
           text-decoration: solid;
-  position: static;
 }
 #register-cta:hover {
   opacity: 1;
