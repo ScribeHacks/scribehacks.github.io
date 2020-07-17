@@ -22,17 +22,12 @@
     }
   }
   
-  
-  
-  .team-member {
-    max-width: 100%;
-
-    @media (min-width: 512px) {
-      max-width: 50%;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 30%;
+  .team-socials {
+    a img {
+      border-radius: 5px;
+      height: 30px;
+      width: 30px;
+      margin-left: 8px;
     }
   }
 

@@ -286,18 +286,11 @@ main {
 .team-members-wrapper li p {
   font-size: 18px;
 }
-.team-members-wrapper .team-member {
-  max-width: 100%;
-}
-@media (min-width: 512px) {
-  .team-members-wrapper .team-member {
-    max-width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .team-members-wrapper .team-member {
-    max-width: 30%;
-  }
+.team-members-wrapper .team-socials a img {
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  margin-left: 8px;
 }
 @media (min-width: 768px) {
   .team-members-wrapper {
