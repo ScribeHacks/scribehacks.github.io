@@ -3,59 +3,26 @@
 .team-members-wrapper {
   display: flex;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   max-width: 768px;
   padding: 0 10px;
 
   li {
     list-style: none;
-    margin-bottom: 20px;
 
     img {
-      width: 200px;
-      height: 200px;
+      border-radius: 5px;
+      width: 180px;
+      height: 180px;
       margin: auto;
     }
 
     p {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
-
-  .linkedin {
-    background-image: url("https://img.icons8.com/metro/104/000000/linkedin.png");
-  }
-
-  .team-member-head {
-    width: 100%;
-    margin-bottom: 50px;
-
-    .head-description {
-      text-align: center;
-
-      h2 {
-        margin-bottom: 0;
-        font-size: 32px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-
-      img {
-        margin: 0;
-        margin-right: 50px;
-      }
-
-      .head-description {
-        text-align: left;
-      
-        h2 {
-          margin-top: 0;
-        }
-      }
-    }
-  }
+  
+  
   
   .team-member {
     max-width: 100%;

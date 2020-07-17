@@ -270,47 +270,21 @@ main {
 .team-members-wrapper {
   display: flex;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   max-width: 768px;
   padding: 0 10px;
 }
 .team-members-wrapper li {
   list-style: none;
-  margin-bottom: 20px;
 }
 .team-members-wrapper li img {
-  width: 200px;
-  height: 200px;
+  border-radius: 5px;
+  width: 180px;
+  height: 180px;
   margin: auto;
 }
 .team-members-wrapper li p {
-  font-size: 24px;
-}
-.team-members-wrapper .team-member-head {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.team-members-wrapper .team-member-head .head-description {
-  text-align: center;
-}
-.team-members-wrapper .team-member-head .head-description h2 {
-  margin-bottom: 0;
-  font-size: 32px;
-}
-@media (min-width: 768px) {
-  .team-members-wrapper .team-member-head {
-    flex-direction: row;
-  }
-  .team-members-wrapper .team-member-head img {
-    margin: 0;
-    margin-right: 50px;
-  }
-  .team-members-wrapper .team-member-head .head-description {
-    text-align: left;
-  }
-  .team-members-wrapper .team-member-head .head-description h2 {
-    margin-top: 0;
-  }
+  font-size: 18px;
 }
 .team-members-wrapper .team-member {
   max-width: 100%;
