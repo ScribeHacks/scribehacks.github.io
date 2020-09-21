@@ -2,7 +2,7 @@ function change() {
     location.href='https://scribehacks.tech'
 }
 
-swal("Success!", "You are now registered for CodeScribe!", "success", {
+swal("Success!", "You are now registered for ScribeHacks!", "success", {
     closeOnClickOutside: true,
     closeOnEsc: true,
   })
