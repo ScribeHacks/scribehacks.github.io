@@ -94,23 +94,23 @@ main {
 }
 
 .section {
-  box-shadow: #000a 5px 0 10px;
+  /*box-shadow: #000a 5px 0 10px;*/
   min-height: 100vh;
   position: relative;
   padding: 30px 15px;
 }
 
 #section2 {
-  background-color: var(--cool-color);
+  background-color: var(--bg-color);
 }
 
 #section3 {
-  background-color: var(--button-color);
+  background-color: var(--bg-color);
 }
 
 #section4,
 #section5 {
-  background-color: var(--paper-color);
+  background-color: var(--bg-color);
 }
 
 /* Typography */
@@ -126,7 +126,7 @@ main {
 
 .section-title {
   font-size: 48px;
-  color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 20px 0;
 }
@@ -141,11 +141,11 @@ main {
 
 /* Scroll snapping - nonessential CSS component, replaces fullpage */
 /* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
-/*.scroll-snap {
+.scroll-snap {
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: both proximity;
+  /*scroll-snap-type: both proximity;*/
 }
 .scroll-snap .section {
   scroll-snap-align: start;
@@ -154,11 +154,11 @@ main {
 
 /* Front page header section */
 #section1 {
-  background: linear-gradient(136deg, #5d949b, #8bb4b9);
+  background: var(--bg-color);
   background-size: 400% 400%;
-  -webkit-animation: background 8s ease infinite;
+  /*-webkit-animation: background 8s ease infinite;
   -moz-animation: background 8s ease infinite;
-  animation: background 8s ease infinite;
+  animation: background 8s ease infinite;*/
   position: relative;
   top: 0;
 }
