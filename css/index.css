@@ -141,7 +141,7 @@ main {
 
 /* Scroll snapping - nonessential CSS component, replaces fullpage */
 /* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
-.scroll-snap {
+/*.scroll-snap {
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
@@ -150,7 +150,7 @@ main {
 .scroll-snap .section {
   scroll-snap-align: start;
   scroll-snap-stop: normal;
-}
+}*/
 
 /* Front page header section */
 #section1 {
