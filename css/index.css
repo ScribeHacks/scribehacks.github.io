@@ -321,3 +321,50 @@ main {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+#faq {
+  overflow: auto;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.faq-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.question {
+  padding: 3px;
+  padding-left: 20px;
+  margin: 15px;
+  position: relative;
+  width: calc(100% - 1em);
+  text-align: left;
+  overflow: hidden;
+  transition: height 0.3s;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.question > summary > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+}
+.question > summary > div > h4 {
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq-row {
+      display: block;
+  }
+  #faq {
+    overflow: hidden;
+    margin-left: 1vw;
+    margin-left: 5vw;
+    width: 90vw;
+}
