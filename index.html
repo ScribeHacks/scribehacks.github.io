@@ -10,13 +10,14 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <link rel="stylesheet" type="text/css" href="css/timetablejs.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 </head>
 
 <body>
     <main class="scroll-snap">
-        <div id="particles"></div>
         <section class="section" id="section1">
+            <div id="particles"></div>
             <div id="frontPage" class="flex-column align-center justify-center">
                 <img src="img/logo.png" alt="ScribeHacks Logo" id="logo">
                 <h1 id="mainTitle" class="fadeInDown">ScribeHacks I</h1>
@@ -88,7 +89,7 @@
                         </li>
                         <li class="flex-row">
                             <div class="col-1">2:00 AM</div>
-                            <div class="col-2">Cup Stacking</div>
+                            <div class="col-2">Cup Stacking Tournament</div>
                             <div class="col-3 nav-right">Pending</div>
                         </li>
                         <li class="flex-row">
@@ -118,7 +119,7 @@
                         </li>
                         <li class="flex-row">
                             <div class="col-1">1:30 PM</div>
-                            <div class="col-2">Winners and Prizes</div>
+                            <div class="col-2">Winner Showcase and Prizes</div>
                             <div class="col-3 nav-right">Pending</div>
                         </li>
                     </ul>
@@ -128,105 +129,77 @@
         <section class="section flex-column align-center justify-center" id="faq">
             <h2 class="section-title">FAQ</h2>
             <br>
-            
-            <div class="faq-row">
-                <div class="faq-question">
-                        <h4 class=question>   Who can participate?</h4>
-                      <p>We allow those in middle school to join us, but with added parental permission. If you
-                          are in college you are welcome to mentor or give speeches at the hackathon. If you want
-                          to be a mentor, you can <a target="_blank" href="https://sohamb117.typeform.com/to/pq7eingx">sign up here</a> or if you
-                          want to sponsor you can email us at <a
-                              href="mailto:sponsorship@scribehacks.tech">sponsorship@scribehacks.tech</a></p>
+            <div style="width: 70%; display: table;">
+                <div style="display: table-row">
+                    <div style="width: 50%; display: table-cell;">
+                        <div class="accordion" style="padding-right: 5%;">
+                            <div class="accordion-item">
+                              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div style="display: table-cell;">
+                        <div class="accordion" style="padding-left: 5%;">
+                            <div class="accordion-item">
+                              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                              <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-                <div class="faq-question">
-                      <h4 class="question">   What can we make?</h4>
-                    <p>At ScribeHacks we want you to pioneer with what you make. While there's no strict 
-                        guidelines on what you can make, we urge participants to make something that looks
-                        towards the future of technology or solves a problem, no matter how small. 
-                    </p>
-                </div>
-            </div>
-            <div class="faq-row">
-                <details class="faq-question">
-                  <summary>
-                      <h4 class="question">   What is a hackathon?</h4>
-                  </summary>
-                  <div class="answer">
-                    <p>A hackathon is an event where participants use their knowledge and skills to create,
-                        develop, design, and create a full product in a certain amount of time. They’re
-                        open not just to programmers and engineers, but to anyone who’s interested in working
-                        together to find answers to the world’s most pressing problems, or just making something fun.
-                    </p>
-                  </div>
-                </details>
-                <details class="faq-question">
-                  <summary>
-                    <div>
-                      <h4>   What if I can't code?</h4>
-                    </div>
-                  </summary>
-                  <div class="answer">
-                    <p>No matter what your skills are, we'll try to make this event fun for you.
-                        We believe that solutions are better when they integrate diverse ways of
-                        thinking. There will be many opportunities to learn new skills or ideas at workshops and
-                        from the people around you. We’ll also be holding team building events where you can
-                        meet new people. Just come eager to learn!
-                    </p>
-                  </div>
-                </details>
-            </div>
-            <div class="faq-row">
-                <details class="question">
-                  <summary>
-                      <h4>   Does it cost anything?</h4>
-                  </summary>
-                  <div class="answer">
-                    <p>ScribeHacks is absolutely free! There is no entry fee, ScribeHacks will provide you with
-                        plenty of food, snacks, swag, and prizes throughout the 24 hours. We can provide all of
-                        this due to our wonderful sponsors!</p>
-                  </div>
-                </details>
-                <details class="question">
-                  <summary>
-                    <div>
-                      <h4>   What should I bring?</h4>
-                    </div>
-                  </summary>
-                  <div class="answer">
-                    <p>Please bring a valid form of identification like a student id or driver's license, a
-                        computer (preferably a laptop), chargers, and any hardware you will use for your hack.
-                        You can also bring a sleeping bag, pillow, toiletries, and a couple changes of clothes.
-                        Food will be provided at the event. No firearms, weapons, alcohol, or illegal drugs are
-                        allowed on campus.</p>
-                  </div>
-                </details>
-            </div>
-            <div class="faq-row">
-                <details class="question">
-                  <summary>
-                      <h4>   How I do prepare?</h4>
-                  </summary>
-                  <div class="answer">
-                    <p>While you are not allowed to start coding or making the art for your project until the
-                        hackathon starts, you can always find a team, register for the hacakthon, make mockups
-                        in Figma, XD, Sketch, and get the materials needed to make your project.
-                    </p>
-                  </div>
-                </details>
-                <details class="question">
-                  <summary>
-                    <div>
-                      <h4>   What are the rules?</h4>
-                    </div>
-                  </summary>
-                  <div class="answer">
-                    <p>All participants are expected to follow the Hack Club Code of Conduct to ensure that 
-                        everyone stays safe and has a fun time. In addition, plagiarism, copying code off the 
-                        internet, or hardcoding values and not disclosing them, and other dishonesty may
-                        disqualify your project.
-                    </p>
-                  </div>
-                </details>
             </div>
         </section>
         

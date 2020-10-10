@@ -209,6 +209,9 @@ body {
   font-weight: bold;
   z-index: 10;
 }
+#logo {
+  margin-top: 5%;
+}
 #section1 #frontPage #logo {
   width: 128px;
 }
