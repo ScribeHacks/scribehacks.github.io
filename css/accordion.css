@@ -5,11 +5,18 @@
 	 box-sizing: border-box;
 }
 
+
  .accordion .accordion-item {
-	 border-bottom: 1px solid #e5e5e5;
+	margin: 5px;
+	margin-bottom: 30px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	padding: 3px;
 }
+
  .accordion .accordion-item button[aria-expanded='true'] {
 	 border-bottom: 1px solid#92dce5;
+	 
 }
  .accordion button {
 	 position: relative;
@@ -82,10 +89,11 @@
 	 opacity: 0;
 	 max-height: 0;
 	 overflow: hidden;
-     transition: opacity 200ms linear, max-height 200ms linear;
+	 transition: opacity 200ms linear, max-height 200ms linear;
+	 /*
      border-right: 2px dashed #415a77;
      border-left: 2px dashed #415a77;
-     border-bottom: 2px dashed #415a77;
+     border-bottom: 2px dashed #415a77;*/
      will-change: opacity, max-height;
      border-radius: 10px;
      padding-left: 10px;
