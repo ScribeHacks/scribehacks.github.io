@@ -15,8 +15,8 @@
 
 <body>
     <main class="scroll-snap">
+        <div id="particles"></div>
         <section class="section" id="section1">
-            <div id="particles"></div>
             <div id="frontPage" class="flex-column align-center justify-center">
                 <img src="img/logo.png" alt="ScribeHacks Logo" id="logo">
                 <h1 id="mainTitle" class="fadeInDown">ScribeHacks I</h1>
@@ -88,7 +88,7 @@
                         </li>
                         <li class="flex-row">
                             <div class="col-1">2:00 AM</div>
-                            <div class="col-2">Cup Stacking Tournament</div>
+                            <div class="col-2">Cup Stacking</div>
                             <div class="col-3 nav-right">Pending</div>
                         </li>
                         <li class="flex-row">
@@ -118,7 +118,7 @@
                         </li>
                         <li class="flex-row">
                             <div class="col-1">1:30 PM</div>
-                            <div class="col-2">Winner Showcase and Prizes</div>
+                            <div class="col-2">Winners and Prizes</div>
                             <div class="col-3 nav-right">Pending</div>
                         </li>
                     </ul>
@@ -128,37 +128,28 @@
         <section class="section flex-column align-center justify-center" id="faq">
             <h2 class="section-title">FAQ</h2>
             <br>
+            
             <div class="faq-row">
-                <details class="question">
-                  <summary>
-                      <h4>   Who can participate?</h4>
-                  </summary>
-                  <div class="answer">
-                    <p>We allow those in middle school to join us, but with added parental permission. If you
-                        are in college you are welcome to mentor or give speeches at the hackathon. If you want
-                        to be a mentor, you can <a target="_blank" href="https://sohamb117.typeform.com/to/pq7eingx">sign up here</a> or if you
-                        want to sponsor you can email us at <a
-                            href="mailto:sponsorship@scribehacks.tech">sponsorship@scribehacks.tech</a></p>
-                  </div>
-                </details>
-                <details class="question">
-                  <summary>
-                    <div>
-                      <h4>   What can we make?</h4>
-                    </div>
-                  </summary>
-                  <div class="answer">
+                <div class="faq-question">
+                        <h4 class=question>   Who can participate?</h4>
+                      <p>We allow those in middle school to join us, but with added parental permission. If you
+                          are in college you are welcome to mentor or give speeches at the hackathon. If you want
+                          to be a mentor, you can <a target="_blank" href="https://sohamb117.typeform.com/to/pq7eingx">sign up here</a> or if you
+                          want to sponsor you can email us at <a
+                              href="mailto:sponsorship@scribehacks.tech">sponsorship@scribehacks.tech</a></p>
+                </div>
+                <div class="faq-question">
+                      <h4 class="question">   What can we make?</h4>
                     <p>At ScribeHacks we want you to pioneer with what you make. While there's no strict 
                         guidelines on what you can make, we urge participants to make something that looks
                         towards the future of technology or solves a problem, no matter how small. 
                     </p>
-                  </div>
-                </details>
+                </div>
             </div>
             <div class="faq-row">
-                <details class="question">
+                <details class="faq-question">
                   <summary>
-                      <h4>   What is a hackathon?</h4>
+                      <h4 class="question">   What is a hackathon?</h4>
                   </summary>
                   <div class="answer">
                     <p>A hackathon is an event where participants use their knowledge and skills to create,
@@ -168,7 +159,7 @@
                     </p>
                   </div>
                 </details>
-                <details class="question">
+                <details class="faq-question">
                   <summary>
                     <div>
                       <h4>   What if I can't code?</h4>

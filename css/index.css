@@ -7,6 +7,42 @@
   --paper-color: #DBCDC6;
 }
 
+/* Layout styles */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: hidden !important;
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+}
+
+main {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.section {
+  
+  min-height: 100vh;
+  position: relative;
+}
+
+#section2 {
+  background:none !important;
+}
+
+#section3 {
+  background:none !important;
+}
+
+#section4,
+#section5 {
+  background:none !important;
+}
+*/
+
 /* Keyframe animations */
 @keyframes fadeInDown {
   0% {
@@ -89,28 +125,23 @@ body {
   overflow: hidden;
 }
 
-main {
-  max-height: 100vh;
-}
-
 .section {
   /*box-shadow: #000a 5px 0 10px;*/
   min-height: 100vh;
   position: relative;
-  padding: 30px 15px;
 }
 
 #section2 {
-  background-color: var(--bg-color);
+  background: none !important;
 }
 
 #section3 {
-  background-color: var(--bg-color);
+  background: none !important;
 }
 
 #section4,
 #section5 {
-  background-color: var(--bg-color);
+  background: none !important;
 }
 
 /* Typography */
@@ -154,7 +185,7 @@ main {
 
 /* Front page header section */
 #section1 {
-  background: var(--bg-color);
+  /*background: var(--bg-color);*/
   background-size: 400% 400%;
   /*-webkit-animation: background 8s ease infinite;
   -moz-animation: background 8s ease infinite;
@@ -162,16 +193,17 @@ main {
   position: relative;
   top: 0;
 }
-#section1 > div {
+
+#particles{
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -100;
   width: 100%;
-  min-height: 100vh;
+  height: 300vw;
+  
 }
-#section1 #particles {
-  bottom: 0;
-}
+
 #section1 #frontPage {
   text-align: center;
   font-weight: bold;
@@ -219,7 +251,7 @@ main {
 
 /* New FAQ accordion component*/
 .neocordion {
-  background-color: var(--cool-color);
+  /*background-color: var(--cool-color);*/
   color: var(--text-color);
   text-align: center;
   max-width: 100%;
@@ -230,7 +262,7 @@ main {
   padding: 20px;
 }
 .neocordion .neocordion-answer {
-  background-color: var(--paper-color);
+  /*background-color: var(--paper-color);*/
   font-size: 18px;
   padding: 20px;
 }
@@ -323,48 +355,36 @@ main {
 /*# sourceMappingURL=index.css.map */
 
 #faq {
-  overflow: auto;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  width: 100%;
 }
 
 .faq-row {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.question {
-  padding: 3px;
-  padding-left: 20px;
-  margin: 15px;
+.faq-question {
   position: relative;
-  width: calc(100% - 1em);
+  width: 45%;
   text-align: left;
   overflow: hidden;
-  transition: height 0.3s;
   background-color: #fff;
   border-radius: 3px;
 }
 
-.question > summary > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  outline: none;
-}
-.question > summary > div > h4 {
-  flex: 1;
-}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 951px) {
   .faq-row {
       display: block;
   }
   #faq {
     overflow: hidden;
-    margin-left: 1vw;
-    margin-left: 5vw;
     width: 90vw;
+  }
+  .question{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
