@@ -5,6 +5,12 @@
 	 box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype"), url("../fonts/CircularStd-Black.svg#CircularStd-Black") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
 
  .accordion .accordion-item {
 	margin: 5px;
@@ -19,6 +25,7 @@
 	 
 }
  .accordion button {
+	font-family: "CircularStd", sans-serif;
 	 position: relative;
 	 display: block;
 	 text-align: left;
