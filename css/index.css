@@ -391,3 +391,8 @@ body {
     margin-right: 5%;
   }
 }
+
+a {
+  color: #dbcdc6;
+  text-decoration: none;
+}

@@ -132,8 +132,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// TODO: Write neocordion EdgeHTML polyfill
-
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
