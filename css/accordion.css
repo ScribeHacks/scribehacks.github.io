@@ -5,6 +5,17 @@
 	 box-sizing: border-box;
 }
 
+.accordion[style]{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.accordion{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+
 @font-face {
 	font-family: "CircularStd";
 	src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype"), url("../fonts/CircularStd-Black.svg#CircularStd-Black") format("svg");
@@ -17,9 +28,8 @@
 	margin-bottom: 30px;
 	background-color: #ffffff;
 	border-radius: 3px;
-	padding: 3px;
+	padding: 5px;
 }
-
  .accordion .accordion-item button[aria-expanded='true'] {
 	 border-bottom: 1px solid#92dce5;
 	 
@@ -30,8 +40,10 @@
 	 display: block;
 	 text-align: left;
 	 width: 100%;
-	 padding: 1em 0;
-	 color: #415a77;
+	 padding: 1em;
+	 padding-right: 15px;
+	 padding-left: 15px
+	 color:  #2B2D42;
 	 font-size: 1.15rem;
 	 font-weight: 400;
 	 border: none;
