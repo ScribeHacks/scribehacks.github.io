@@ -1,10 +1,10 @@
 particlesJS("particles", {
   "particles": {
     "number": {
-      "value": 30,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 10000
       }
     },
     "color": {
@@ -24,14 +24,14 @@ particlesJS("particles", {
       "value": 1.0,
       "random": false,
       "anim": {
-        "enable": false,
-        "speed": 0,
-        "opacity_min": 1,
+        "enable": true,
+        "speed": 1.2,
+        "opacity_min": 0.0,
         "sync": false
       }
     },
     "size": {
-      "value": 5,
+      "value": 20,
       "random": true,
       "anim": {
         "enable": false,
@@ -127,8 +127,8 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      var panelheight = panel.scrollHeight + 10;
-      panel.style.maxHeight = panelheight + "px";
+      var panelheight = panel.scrollHeight * 2;
+      panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
 }
