@@ -128,7 +128,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       var panelheight = panel.scrollHeight * 2;
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panelheight + "em";
     } 
   });
 }
