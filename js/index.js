@@ -116,22 +116,26 @@ function initTimeTable() {
 }
 
 // Accordion expansion code
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion-content");
 var i;
 var toggled = document.getElementsByClassName("active");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      var panelheight = panel.scrollHeight * 2;
-      panel.style.maxHeight = panelheight + "em";
-    } 
-  });
+for(i = 0; i < acc.length; i++) {
+  acc[i].style.maxHeight = acc[i].scrollHeight * 2;
 }
+
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       var panelheight = panel.scrollHeight * 2;
+//       panel.style.maxHeight = panelheight + "em";
+//     } 
+//   });
+// }
 
 const items = document.querySelectorAll(".accordion button");
 
