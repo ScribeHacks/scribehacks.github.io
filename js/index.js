@@ -148,6 +148,10 @@ function toggleAccordion() {
   
   if (itemToggle == 'false') {
     this.setAttribute('aria-expanded', 'true');
+    content = this.nextElementSibling;
+    content.setAttribute('height',(content.scrollHeight*2) + "px")
+    console.log(content.getAttribute('height'));
+    console.log(content.scrollHeight );
   }
 }
 
