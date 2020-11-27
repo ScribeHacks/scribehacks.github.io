@@ -22,7 +22,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "contact@markups.io";
+        $recipient = "contact@scribehacks.tech";
 
         // Set the email subject.
         $subject = "New contact from $name";
