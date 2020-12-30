@@ -4,7 +4,7 @@
   --text-color: #2B2D42;
   --cool-color: #92DCE5;
   --button-color: #415A77;
-  --paper-color: #DBCDC6;
+  --paper-color: #F5F2F3;
 }
 
 /* Layout styles */
@@ -29,8 +29,6 @@ main {
 }
 
 .section {
-
-  min-height: 100vh;
   position: relative;
 }
 
@@ -134,12 +132,33 @@ body {
 
 .section {
   /*box-shadow: #000a 5px 0 10px;*/
-  min-height: 100vh;
   position: relative;
 }
 
-#section2, #section3, #section4, #section5 {
-  background: var(--bg-color) !important;
+#about, #section3, #section5 {
+  background-color: var(--bg-color) !important;
+}
+
+#about h2, #about p {
+  text-align: center;
+}
+
+.section {
+  padding-top: 5vh;
+}
+
+#about {
+  padding-bottom: 5vh;
+}
+
+#about p{
+  font-size: 15px;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+#section2, #section4 {
+  background-color: var(--paper-color) !important;
 }
 
 
@@ -251,6 +270,11 @@ body {
   font-family: "Abel" !important;
 }
 
+#section4 {
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
 @media screen and (min-width: 992px) {
   #section1 #frontPage #logo {
     width: 200px;
@@ -333,15 +357,26 @@ body {
 
 /* Team member images */
 .team-members-wrapper {
-  display: flex;
+  /*
+  display: block;
   margin: auto;
   margin-top: 20px;
-  max-width: 768px;
+  max-width: 900vw;
   padding: 0 10px;
+  */
+  margin: 0 auto;
+width: 70vw;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: start;
 }
 
 .team-members-wrapper li {
   list-style: none;
+  float: left;
+  margin: 10px;
 }
 
 .team-members-wrapper li img {
@@ -350,6 +385,8 @@ body {
   height: 180px;
   margin: auto;
 }
+
+
 
 .team-members-wrapper li p {
   font-size: 18px;
