@@ -4,7 +4,7 @@
   --text-color: #2B2D42;
   --cool-color: #92DCE5;
   --button-color: #415A77;
-  --paper-color: #F5F2F3;
+  --paper-color: #F3F0F1;
 }
 
 /* Layout styles */
@@ -135,30 +135,40 @@ body {
   position: relative;
 }
 
-#about, #section3, #section5 {
+#faq {
+  /*
+  background-image: linear-gradient(to bottom, rgba(248, 246, 249, 0.5), rgba(248, 246, 249, 1)), url("https://images.unsplash.com/photo-1598624429490-1371ae5a46e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  */
+  background-color: var(--bg-color);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#about, #section5 {
   background-color: var(--bg-color) !important;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 #about h2, #about p {
   text-align: center;
 }
 
-.section {
-  padding-top: 5vh;
-}
-
-#about {
-  padding-bottom: 5vh;
-}
-
 #about p{
-  font-size: 15px;
+  font-size: 18px;
   margin-right: 10vw;
   margin-left: 10vw;
+  font-family: "Abel";
+  font-weight: bold;
 }
 
 #section2, #section4 {
   background-color: var(--paper-color) !important;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 
@@ -215,6 +225,7 @@ body {
   animation: background 8s ease infinite;*/
   position: relative;
   top: 0;
+  height: 100vh;
 }
 
 #particles {
