@@ -21,6 +21,9 @@
 	<!-- Main Style -->
 	<link href="style.css" rel="stylesheet">
 
+	<!-- Extra Styles -->
+	<link href="assets/css/main.css" rel="stylesheet">
+
 	<!-- Fonts -->
 
 	<!-- Open Sans for body font -->
@@ -62,18 +65,18 @@
 						<li><a href="#mu-hero">Home</a></li>
 						<li><a href="#mu-about">About Us</a></li>
 						<li><a href="#mu-schedule">Schedule</a></li>
-						<li><a href="#mu-speakers">Speakers</a></li>
+						<!-- <li><a href="#mu-speakers">Speakers</a></li> -->
 						<li><a href="#mu-venue">Map</a></li>
 						<li><a href="#mu-faq">FAQ</a></li>
-						<li><a href="#mu-sponsors">Sponsors</a></li>
-						<li><a href="#mu-team">Team</a></li>
+						<li><a href="#mu-sponsors">Team</a></li>
+						<!-- <li><a href="#mu-team">Team</a></li> -->
 						<li><a href="#mu-contact">Contact</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 		<!-- End menu -->
-
+<section id="mu-hero">
 		<div class="mu-hero-overlay">
 			<div class="container">
 				<div class="mu-hero-area">
@@ -114,6 +117,7 @@
 			</div>
 		</div>
 	</header>
+</section>
 	<!-- End Header -->
 
 	<!-- Start main content -->
@@ -128,34 +132,16 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mu-about-left">
-										<h2>About The Conference</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquam
-											distinctio magni enim error commodi suscipit nobis alias nulla, itaque ex,
-											vitae repellat amet neque est voluptatem iure maxime eius!</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus in
-											accusamus qui sequi nisi, sint magni, ipsam, porro nesciunt id veritatis
-											quaerat ipsum consequatur laborum, provident veniam quibusdam placeat quam?
+										<h2>About ScribeHacks</h2>
+										<p>ScribeHacks is a middle-school and high-school hackathon occurring from September 18-19, 2021. Anyone of any skill level is free to submit a project that will help the world and its future. Our event is free, with a lot of free swag, workshops, learning, and events! During our hackathon, you can form a team of up to 4 people to code anything you want! Attend various workshops and speaker events throughout the long weekend, while hanging out in our Discord community and getting a ton of free swag.
 										</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-											perspiciatis magni omnis excepturi, cumque reiciendis.</p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="mu-about-right">
-										<h2>About The Conference</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquam
-											distinctio magni enim error commodi suscipit nobis alias nulla, itaque ex,
-											vitae repellat amet neque est voluptatem iure maxime eius!</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus in
-											accusamus qui sequi nisi, sint magni, ipsam, porro nesciunt id veritatis
-											quaerat ipsum consequatur laborum, provident veniam quibusdam placeat quam?
+										<h1>Our Mission: </h1>
+										<p>Writing the code to the future. Coding gives us the power to make things. Every Google, every Facebook, every Microsoft, started with code. We want to encourage each person to learn to make something impactful or innovative through programming.
 										</p>
-
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-											perspiciatis magni omnis excepturi, cumque reiciendis.</p>
 									</div>
 								</div>
 							</div>
@@ -318,7 +304,7 @@
 		<!-- End Schedule -->
 
 		<!-- Start Speakers -->
-		<section id="mu-speakers">
+		<section id="mu-speakers" class="hidden">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -679,7 +665,7 @@
 		<!-- End FAQ -->
 
 		<!-- Start Sponsors -->
-		<section id="mu-sponsors">
+		<section id="mu-sponsors-hidden" class="hidden">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -779,8 +765,8 @@
 		</section>
 		<!-- End Sponsors -->
 
-		<!-- Start Sponsors -->
-		<section id="mu-team">
+		<!-- Start Team -->
+		<section id="mu-sponsors">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -795,74 +781,97 @@
 								<div class="row">
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/soham.jpg" alt="Soham - Head of Logistics">
 											<p>Soham</p>
 											<p>Logistics Team</p>
+											<a href="https://github.com/sohamb117"><img src="assets/images/github.png" class="socialLink"></a>
+											<a href="https://linkedin.com/in/sohamb117/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/sdbagel.jpg" alt="Kyle - Logistics Team">
 											<p>Kyle</p>
 											<p>Logistics Team</p>
+											<a href="https://github.com/SDBagel"><img src="assets/images/github.png" class="socialLink"></a>
+											<a href="https://www.linkedin.com/in/sdbagel/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 									
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/shreya.jpg" alt="Shreya - Community Team">
 											<p>Shreya</p>
 											<p>Community Team</p>
+											<a href="https://github.com/shreyaparikh08"><img src="assets/images/github.png" class="socialLink"></a>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/aparna.jpg" alt="Aparna - Community Team">
 											<p>Aparna</p>
 											<p>Community Team</p>
+											<a href="https://www.linkedin.com/in/aparna-prabhakar-a8490a1b1/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/team-images/something.png" alt="Chenghao - Community Team">
-											<p>Chenghao</p>
+										<div class="mu-sponsors-single teamDiv">
+											<img src="assets/team-images/ginni.JPG" alt="Ginni - Community Team">
+											<p>Ginni</p>
 											<p>Community Team</p>
 										</div>
 									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single teamDiv">
+											<img src="assets/team-images/something.png" alt="Chenghao - Community Team">
+											<p>Chenghao</p>
+											<p>Community Team</p>
+											<a href="https://github.com/chenghaoli36"><img src="assets/images/github.png" class="socialLink"></a>
+											<a href="https://www.linkedin.com/in/chenghao-li786/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
+										</div>
+									</div>
 									
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/kai.png" alt="Kai - Tech Team">
 											<p>Kai</p>
 											<p>Tech Team</p>
+											<a href="https://github.com/kaidevrim"><img src="assets/images/github.png" class="socialLink"></a>
+											<a href="https://www.linkedin.com/in/kai-mccormick/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 									
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/rohan.jpg" alt="Rohan - Tech Team">
 											<p>Rohan</p>
 											<p>Tech Team</p>
+											<a href="https://github.com/rohan-bansal"><img src="assets/images/github.png" class="socialLink"></a>
+											<a href="https://linkedin.com/in/bansal-rohan"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/chloe.jpg" alt="Chloe - Educational Partners">
 											<p>Chloe</p>
 											<p>Educational Partners</p>
+											<a href="https://www.linkedin.com/in/chloewang55/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
+										<div class="mu-sponsors-single teamDiv">
 											<img src="assets/team-images/pradyun.png" alt="Pradyun - Educational Partners">
 											<p>Pradyun</p>
 											<p>Educational Partners</p>
+											<a href="https://github.com/pradyungn/"><img src="assets/images/github.png" class="socialLink"></a>
+											<a href="https://www.linkedin.com/in/pradyun-n-958499b8/"><img src="assets/images/linkedin-in.png" class="socialLink"></a>
 										</div>
 									</div>
 								</div>
@@ -874,7 +883,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- End Sponsors -->
+		<!-- End Team -->
 
 		<!-- Start Contact -->
 		<section id="mu-contact">
@@ -885,8 +894,7 @@
 
 							<div class="mu-title-area">
 								<h2 class="mu-heading-title">Contact Us</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-									Ipsum has been the industry's standard dummy text ever</p>
+								<p>We love to answer questions so please feel free to drop us an email at, </p> <a href="mailto:help@scribehacks.tech">help@scribehacks.tech</a>
 							</div>
 
 							<!-- Start Contact Content -->
@@ -896,22 +904,19 @@
 									<div class="col-md-12">
 										<div class="mu-contact-form-area">
 											<div id="form-messages"></div>
-											<form id="ajax-contact" method="post" action="mailer.php"
+											<!-- action="mailer.php" -->
+											<form id="ajax-contact" 
 												class="mu-contact-form">
 												<div class="form-group">
-													<input type="text" class="form-control" placeholder="Name" id="name"
+													<input type="text" class="form-control" placeholder="Subject" id="subject-field"
 														name="name" required>
 												</div>
 												<div class="form-group">
-													<input type="email" class="form-control" placeholder="Enter Email"
-														id="email" name="email" required>
-												</div>
-												<div class="form-group">
-													<textarea class="form-control" placeholder="Message" id="message"
+													<textarea class="form-control" placeholder="Message" id="body-field"
 														name="message" required></textarea>
 												</div>
-												<button type="submit"
-													class="mu-send-msg-btn"><span>SUBMIT</span></button>
+												<a type="submit"
+													class="mu-send-msg-btn button" onclick="sendEmail()" href="" id="mailSubmit"><span>SUBMIT</span></a>
 											</form>
 										</div>
 									</div>
@@ -966,6 +971,8 @@
 	<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
 	<!-- Ajax contact form  -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
+	<!-- Additional Code -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
 
 
 
