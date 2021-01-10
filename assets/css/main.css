@@ -1,0 +1,12 @@
+.teamDiv {
+    text-align: center;
+}
+
+.socialLink {
+    width: 15%;
+}
+
+.discord {
+    width: 2%;
+    z-index: -1;
+}
