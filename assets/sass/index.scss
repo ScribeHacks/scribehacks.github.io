@@ -1,0 +1,32 @@
+:root {
+  /* Light Mode Colors */
+  --bg-color: #F8F7F9;
+  --text-color: #2B2D42;
+  --cool-color: #92DCE5;
+  --button-color: #415A77;
+  --paper-color: #F3F0F1;
+}
+
+// Utilities
+@import './util/animations';
+/*@import './util/layout';*/
+@import './util/typography';
+/*@import './util/scroll-snap';*/
+
+// Sections
+@import './sections/header';
+@import './sections/about';
+@import './sections/faq';
+@import './sections/schedule';
+@import './sections/teams';
+
+// Components
+@import './components/neocordion';
+@import './components/schedule';
+@import './components/team_member';
+@import './components/register-cta';
+@import './components/faq-elements';
+@import './components/timetablejs';
+@import './components/accordion';
+@import './components/social-links';
+@import './components/footer';

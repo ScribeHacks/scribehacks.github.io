@@ -1,0 +1,15 @@
+/* Scroll snapping - nonessential CSS component, replaces fullpage */
+/* Chrome 69+ FF 68+ Edge 79+ Safari 11+ NO IE*/
+
+.scroll-snap {
+  overflow: auto;
+  position: relative;
+  
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: both proximity;
+
+  .section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+}

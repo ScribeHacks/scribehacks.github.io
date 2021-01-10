@@ -1,0 +1,32 @@
+/* Layout styles */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+main {
+  max-height: 100vh;
+}
+
+.section {
+  box-shadow: #000a 5px 0 10px;
+  min-height: 100vh;
+  position: relative;
+  padding: 30px 15px;
+}
+/*
+section2 {
+  background-color: var(--cool-color);
+}
+
+#section3 {
+  background-color: var(--button-color);
+}
+
+#section4,
+#section5 {
+  background-color: var(--paper-color);
+}
+*/
