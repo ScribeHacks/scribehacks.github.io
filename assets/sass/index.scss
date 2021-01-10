@@ -1,21 +1,21 @@
 
 // Utilities
-@use './utility/root';
-@use './utility/animations';
-@use './utility/typography';
+@import './utility/root';
+@import './utility/animations';
+@import './utility/typography';
 
 // Sections
-@use './sections/about';
-@use './sections/faq';
-@use './sections/header';
-@use './sections/schedule';
-@use './sections/teams';
+@import './sections/about';
+@import './sections/faq';
+@import './sections/header';
+@import './sections/schedule';
+@import './sections/teams';
 
 // Components
-@use './components/accordion';
-@use './components/faq-elements';
-@use './components/footer';
-@use './components/register-cta';
-@use './components/schedule';
-@use './components/social-links';
-@use './components/team_member';
+@import './components/accordion';
+@import './components/faq-elements';
+@import './components/footer';
+@import './components/register-cta';
+@import './components/schedule';
+@import './components/social-links';
+@import './components/team_member';
