@@ -13,3 +13,21 @@ function sendEmail() {
     document.getElementById("mailSubmit").href = email;
     console.log(document.getElementById("mailSubmit").href);
 }
+var navClosed = true;
+function closeNav() {
+    var navbar = document.getElementById('bs-example-navbar');
+    console.log("1");
+    if (/Mobi/.test(navigator.userAgent)) {
+        console.log("2");
+        if (navClosed) {
+            navbar.classList.remove('hidden');
+            navClosed = false;
+            console.log("3");
+        }
+        else {
+            navbar.classList.add('hidden');
+            navClosed = true;
+            console.log("4");
+        }
+    }
+}
