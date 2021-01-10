@@ -14,22 +14,21 @@
 }
 
 @media only screen and (max-width: 951px) {
-    .faq {
-      display: block;
-    }
-  
-    .faq-row {
-      display: initial;
-    }
-  
-    .faq-item {
-      display: inherit;
-    }
-  
-    #faq {
-      overflow: hidden;
-      width: 90vw;
-    }
-  
+  .faq {
+    display: block;
+  }
+
+  .faq-row {
+    display: initial;
+  }
+
+  .faq-item {
+    display: inherit;
+  }
+
+  #faq {
+    overflow: hidden;
+    width: 90vw;
+  }
 }
   
