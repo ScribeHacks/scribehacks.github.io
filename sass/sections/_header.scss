@@ -1,82 +1,66 @@
 
 /* Front page header section */
-
 #section1 {
-  background: linear-gradient(136deg, #5d949b, lighten(#5d949b, 15));
+  /*background: var(--bg-color);*/
   background-size: 400% 400%;
-
-  -webkit-animation: background 8s ease infinite;
+  /*-webkit-animation: background 8s ease infinite;
   -moz-animation: background 8s ease infinite;
-  animation: background 8s ease infinite;
-
+  animation: background 8s ease infinite;*/
   position: relative;
   top: 0;
+  height: 100vh;
+  min-height: 100vh;
+}
 
-  > div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
+#frontPage {
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  background-image: linear-gradient(to bottom, rgba(248, 246, 249, 0.5), rgba(248, 246, 249, 1)), url("https://images.unsplash.com/photo-1598624429490-1371ae5a46e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mainTitle {
+  font-size: 42px;
+  margin-bottom: 3%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#slogan {
+  font-family: "Abel" !important;
+  font-size: 32px;
+  margin-bottom: 30px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-family: "Abel" !important;
+}
+
+@media screen and (min-width: 992px) {
+  #section1 #frontPage #logo {
+    width: 200px;
   }
 
-  #particles {
-    bottom: 0;
+  #section1 #frontPage #mainTitle {
+    font-size: 110px;
+    margin-bottom: 0;
   }
 
-  #frontPage {
-    text-align: center;
-    font-weight: bold;
+  #section1 #frontPage #slogan {
+    font-size: 48px;
+  }
 
-    z-index: 10;
-
-    #logo {
-      width: 128px;
-    }
-
-    #mainTitle {
-      font-size: 42px;
-      margin-bottom: 3%;
-
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-    }
-
-    #slogan {
-      font-family: 'Abel' !important;
-      font-size: 32px;
-      margin-bottom: 30px;
-
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      font-family: 'Abel' !important;
-    }
-
-    @media screen and (min-width: 992px) {
-      #logo {
-        width: 200px;
-      }
-
-      #mainTitle {
-        font-size: 110px;
-        margin-bottom: 0;
-      }
-
-      #slogan {
-        font-size: 48px;
-      }
-
-      .subtitle {
-        font-size: 24px;
-      }
-    }
+  #section1 #frontPage .subtitle {
+    font-size: 24px;
   }
 }
