@@ -2,7 +2,6 @@
 /* Front page header section */
 #section1 {
   /*background: var(--bg-color);*/
-  background-size: 400% 400%;
   /*-webkit-animation: background 8s ease infinite;
   -moz-animation: background 8s ease infinite;
   animation: background 8s ease infinite;*/
@@ -10,16 +9,16 @@
   top: 0;
   height: 100vh;
   min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(248, 246, 249, 0.5), rgba(248, 246, 249, 1)), url("https://images.unsplash.com/photo-1598624429490-1371ae5a46e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #frontPage {
   text-align: center;
   font-weight: bold;
   z-index: 10;
-  background-image: linear-gradient(to bottom, rgba(248, 246, 249, 0.5), rgba(248, 246, 249, 1)), url("https://images.unsplash.com/photo-1598624429490-1371ae5a46e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #mainTitle {
@@ -39,6 +38,11 @@
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+
+#logo {
+  margin-top: 10vh;
 }
 
 .subtitle {
@@ -64,3 +68,4 @@
     font-size: 24px;
   }
 }
+
