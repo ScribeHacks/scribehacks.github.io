@@ -4,6 +4,7 @@
   import About from "./sections/About.svelte";
   import FAQ from "./sections/FAQ.svelte";
   import Schedule from "./sections/Schedule.svelte";
+  import Venue from "./sections/Venue.svelte";
   import Team from "./sections/Team.svelte";
 </script>
 
@@ -13,6 +14,7 @@
   <About />
   <FAQ />
   <Schedule />
+  <Venue />
   <Team />
 </main>
 
