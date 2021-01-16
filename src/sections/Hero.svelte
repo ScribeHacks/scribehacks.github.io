@@ -36,11 +36,10 @@
   .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     min-height: 60vh;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
   }
 
