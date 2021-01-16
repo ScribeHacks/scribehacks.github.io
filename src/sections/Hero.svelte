@@ -1,4 +1,11 @@
 
+<script>
+  // MLH OAuth information
+  let client_id = "f3f66e487f904efac28b5e7102003df0c471ffdb534d3116b828d8c6927f7cf1";
+  let redirect_uri = "https://scribehacks.tech/success";
+  let scopes = "email+demographics+birthday+education+event";
+</script>
+
 <section class="section">
   <div class="hero">
     <div>
@@ -13,7 +20,7 @@
         <span class="subtitle">Registrations Closed</span>
       </p>
       <br>
-      <p><a id="register-cta" href="https://my.mlh.io/oauth/authorize?client_id=f3f66e487f904efac28b5e7102003df0c471ffdb534d3116b828d8c6927f7cf1&redirect_uri=https://scribehacks.tech/success.html&response_type=token&scope=email+demographics+birthday+education+event">
+      <p><a id="register-cta" href="https://my.mlh.io/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=token&scope={scopes}">
         Register Now
       </a></p>
     </div>
