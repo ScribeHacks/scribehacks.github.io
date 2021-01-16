@@ -64,7 +64,7 @@
       border-bottom: none;
       box-shadow: none;
       transform: scale(1.05);
-      z-index: 100;
+      z-index: 9;
 
       .icon {
         background-color: #92dce5;
@@ -91,7 +91,7 @@
       top: 100%;
       left: -2px;
       right: -2px;
-      z-index: 99;
+      z-index: 9;
 
       transition-duration: 0.2s;
     }

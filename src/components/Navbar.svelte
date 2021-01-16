@@ -12,12 +12,14 @@
   .nav {
     background-color: #fff;
     border-radius: 30px;
+    box-shadow: #555a 2px 2px 10px;
     display: flex;
 
     padding: 0 25px;
     position: fixed;
     top: 30px;
     right: 30px;
+    z-index: 10;
     
     overflow: hidden;
   }
