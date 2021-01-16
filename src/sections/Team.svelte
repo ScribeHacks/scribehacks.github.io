@@ -88,10 +88,11 @@
 
     .team-members {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       margin-top: 30px;
       padding: 0;
+
+      max-width: 1100px;
+      overflow: auto;
     }
   }
 </style>

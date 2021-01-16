@@ -25,8 +25,9 @@
 
     margin-right: 2rem;
     margin-bottom: 2rem;
+    min-width: 180px;
 
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     list-style: none;
     overflow: hidden;
