@@ -93,7 +93,7 @@
       margin-top: 30px;
       padding: 0;
 
-      max-width: 1100px;
+      max-width: 100%;
       overflow: auto;
     }
   }

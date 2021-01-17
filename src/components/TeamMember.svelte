@@ -23,9 +23,9 @@
     box-shadow: #aaa 2px 2px 10px;
     border-radius: 5px;
 
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    min-width: 180px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    min-width: 130px;
 
     display: inline-flex;
     flex-direction: column;
@@ -33,8 +33,8 @@
     overflow: hidden;
 
     .pfp {
-      height: 180px;
-      width: 180px;
+      height: 130px;
+      width: 130px;
     }
 
     .info {
@@ -50,6 +50,19 @@
       img {
         margin-left: 5px;
         width: 25px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .team-member {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      min-width: 180px;
+
+      .pfp {
+        height: 180px;
+        width: 180px;
       }
     }
   }
