@@ -1,4 +1,27 @@
 
+@font-face {
+  font-family: 'CircularStd';
+  src: 
+    url('./fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/CircularStd-Black.woff') format('woff'),
+    url('./fonts/CircularStd-Black.ttf')  format('truetype'),
+    url('./fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Theme & Colors */
+  --bg-color: #F8F7F9;
+  --text-color: #2B2D42;
+  --cool-color: #92DCE5;
+  --button-color: #415A77;
+  --paper-color: #F3F0F1;
+
+  /* Typography */
+  font-family: 'CircularStd', sans-serif;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
