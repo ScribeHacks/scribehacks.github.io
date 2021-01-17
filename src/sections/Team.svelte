@@ -89,11 +89,16 @@
     }
 
     .team-members {
-      display: flex;
+        /*display: flex;*/
+     display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 50px;
       margin-top: 30px;
       padding: 0;
 
       max-width: 100%;
+      min-width: 100%;
       overflow: auto;
     }
   }

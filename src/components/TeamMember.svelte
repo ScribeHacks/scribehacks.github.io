@@ -26,15 +26,22 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     min-width: 130px;
+    height: 220px;
 
     display: inline-flex;
     flex-direction: column;
     list-style: none;
     overflow: hidden;
 
-    .pfp {
+    /*.pfp {
       height: 130px;
       width: 130px;
+    }*/
+
+    .pfp {
+        max-width: 100%;
+        min-height: 65%;
+        display: block;
     }
 
     .info {
@@ -60,10 +67,10 @@
       margin-bottom: 2rem;
       min-width: 180px;
 
-      .pfp {
+      /*.pfp {
         height: 180px;
         width: 180px;
-      }
+      }*/
     }
   }
 </style>
