@@ -2,74 +2,103 @@
 <section class="section">
   <h2>Schedule and Activities</h2>
 
-  <div class="mu-schedule-content-area">
-    <!-- Tab panes -->
-    <div class="tab-content mu-schedule-content">
-      <div
-        role="tabpanel"
-        class="tab-pane fade mu-event-timeline active in"
-        id="first-day"
-      >
-        <ul>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">8.00 AM</p>
-              <h3>Doors Open, Check In</h3>
-              <span>Event</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">9.00 AM</p>
-              <h3>Opening Ceremony</h3>
-              <span>Event</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">10.00 AM</p>
-              <h3>Hacking Begins</h3>
-              <span>Event</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">1.00 P.M</p>
-              <h3>Lunch</h3>
-              <span>By Food Co 1</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">4.00 P.M</p>
-              <h3>Capture the Flag (Digital)</h3>
-              <span>Event</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">7.00 P.M</p>
-              <h3>Dinner</h3>
-              <span>By Food Co. 2</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">8.00 P.M</p>
-              <h3>Super Smash Bros. Ultimate Tournament</h3>
-              <span>Event</span>
-            </div>
-          </li>
-          <li>
-            <div class="mu-single-event">
-              <p class="mu-event-time">Midnight</p>
-              <h3>Midnight Snack</h3>
-              <span>By Food Co. 3</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div class="schedule">
+    <ul>
+      <h3>Saturday</h3>
+      <li class="schedule-item">
+        <div class="col-1">8:00 AM</div>
+        <div class="col-2">Doors Open, Check In</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">9:00 AM</div>
+        <div class="col-2">Opening Ceremony</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">10:00 AM</div>
+        <div class="col-2">Hacking Begins</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">1:00 PM</div>
+        <div class="col-2">Lunch</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">4:00 PM</div>
+        <div class="col-2">Capture The Flag (Digital)</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">7:00 PM</div>
+        <div class="col-2">Dinner</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">8:00 PM</div>
+        <div class="col-2">Super Smash Bros. Tournament</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">12:00 AM</div>
+        <div class="col-2">Midnight Snack</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+    </ul>
+    <ul class="traveller" aria-hidden="true">
+      <li class="stop"></li>
+      <li class="stop"></li>
+      <li class="stop"></li>
+      <li class="stop"></li>
+      <li class="stop"></li>
+      <li class="stop"></li>
+      <li class="stop"></li>
+      <li class="stop"></li>
+    </ul>
+    <ul>
+      <h3>Sunday</h3>
+      <li class="schedule-item">
+        <div class="col-1">8:00 AM</div>
+        <div class="col-2">Doors Open, Check In</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">9:00 AM</div>
+        <div class="col-2">Opening Ceremony</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">10:00 AM</div>
+        <div class="col-2">Hacking Begins</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">1:00 PM</div>
+        <div class="col-2">Lunch</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">4:00 PM</div>
+        <div class="col-2">Capture The Flag (Digital)</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">7:00 PM</div>
+        <div class="col-2">Dinner</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">8:00 PM</div>
+        <div class="col-2">Super Smash Bros. Tournament</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+      <li class="schedule-item">
+        <div class="col-1">12:00 AM</div>
+        <div class="col-2">Midnight Snack</div>
+        <div class="col-3 nav-right">Pending</div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -78,6 +107,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: 1100px;
+    margin: auto;
     padding: 60px 10px;
 
     h2 {
@@ -86,92 +118,98 @@
     }
   }
 
-  .mu-schedule-content-area {
-    display: inline;
-    margin-top: 50px;
+  .schedule {
+    display: flex;
+    margin-top: 30px;
     width: 100%;
-  }
 
-  .mu-schedule-content {
-    margin-top: 50px;
-  }
+    ul {
+      flex: 1 1;
+      margin: 5px;
+      padding: 0;
+      text-align: center;
+    }
 
-  .mu-event-timeline ul li {
-    list-style-type: none;
-    position: relative;
-    width: 2px;
-    margin: 0 auto;
-    padding-top: 50px;
-    background-color: #ddd;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+    ul li {
+      list-style-type: none;
+    }
 
-  .mu-event-timeline ul li::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 70px;
-    transform: translateX(-50%);
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background: inherit;
-  }
+    .traveller {
+      flex: none;
+      margin: 5px 30px;
+      margin-top: 4rem;
+      padding: 0;
+      position: relative;
 
-  .mu-event-timeline ul li .mu-single-event {
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
-    -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
-    box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
-    position: relative;
-    top: 0;
-    width: 400px;
-    padding: 15px;
-    text-align: left;
-  }
+      .stop {
+        background-color: #0af;
+        border-radius: 50%;
+        display: block;
 
-  .mu-event-timeline ul li:nth-child(2n) .mu-single-event {
-    left: 50px;
-  }
+        margin-top: 30px;
+        margin-bottom: 4.44rem;
+        height: 20px;
+        width: 20px;
+        position: relative;
 
-  .mu-event-timeline ul li:nth-child(2n + 1) .mu-single-event {
-    left: -450px;
-    text-align: right;
-  }
+        &:nth-child(1) {
+          background-color: #ffe764;
+        }
+        &:nth-child(2) {
+          background-color: #ffe077;
+        }
+        &:nth-child(3) {
+          background-color: #ffd88b;
+        }
+        &:nth-child(4) {
+          background-color: #ffcfa1;
+        }
+        &:nth-child(5) {
+          background-color: #e3bfaa;
+        }
+        &:nth-child(6) {
+          background-color: #a5a2aa;
+        }
+        &:nth-child(7) {
+          background-color: #6986aa;
+        }
+        &:nth-child(8) {
+          background-color: #2e6aaa;
+        }
 
-  .mu-event-timeline ul li .mu-single-event::before {
-    content: "";
-    position: absolute;
-    top: 23px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
+        &::after {
+          background-color: #fff;
+          border-radius: 50%;
+          content: "";
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          left: 4px;
+          bottom: 4px;
+          z-index: 2;
+        }
+      }
 
-  .mu-event-timeline ul li:nth-child(2n + 1) .mu-single-event::before {
-    right: -15px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #fff;
-  }
+      &::after {
+        background-image: linear-gradient(180deg, #fe5, #fca, #05a);
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 4px;
+        height: 780px;
+      }
+    }
 
-  .mu-event-timeline ul li:nth-child(2n) .mu-single-event::before {
-    left: -16px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #fff transparent transparent;
-  }
+    .schedule-item {
+      box-shadow: #ccc 2px 2px 10px;
+      display: flex;
+      justify-content: space-between;
 
-  .mu-event-timeline ul li .mu-single-event h3 {
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-
-  .mu-event-timeline ul li .mu-single-event p {
-    margin-bottom: 5px;
-  }
-
-  .mu-event-timeline ul li .mu-single-event span {
-    font-size: 12px;
+      margin-bottom: 20px;
+      padding: 25px 50px;
+    }
   }
 </style>
