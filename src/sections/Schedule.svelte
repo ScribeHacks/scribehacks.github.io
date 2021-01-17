@@ -9,42 +9,42 @@
       <li class="schedule-item">
         <div class="col-1">8:00 AM</div>
         <div class="col-2">Doors Open, Check In</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">9:00 AM</div>
         <div class="col-2">Opening Ceremony</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">10:00 AM</div>
         <div class="col-2">Hacking Begins</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">1:00 PM</div>
         <div class="col-2">Lunch</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">4:00 PM</div>
         <div class="col-2">Capture The Flag (Digital)</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">7:00 PM</div>
         <div class="col-2">Dinner</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">8:00 PM</div>
         <div class="col-2">Super Smash Bros. Tournament</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
         <div class="col-1">12:00 AM</div>
         <div class="col-2">Midnight Snack</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
     </ul>
     <ul class="traveller" aria-hidden="true">
@@ -63,19 +63,19 @@
       <li class="schedule-item">
         <div class="col-1">9:00 AM</div>
         <div class="col-2">Project Submissions</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-gap"></li>
       <li class="schedule-item">
         <div class="col-1">1:00 PM</div>
         <div class="col-2">Closing Ceremony</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
       <li class="schedule-gap"></li>
       <li class="schedule-item">
         <div class="col-1">7:00 PM</div>
         <div class="col-2">Virtual Afterparty</div>
-        <div class="col-3 nav-right">Pending</div>
+        <div class="col-3">Pending</div>
       </li>
     </ul>
   </div>
@@ -90,7 +90,7 @@
 
     max-width: 1100px;
     margin: auto;
-    padding: 60px 10px;
+    padding: 30px 20px;
 
     h2 {
       font-size: 2rem;
@@ -100,7 +100,8 @@
 
   .schedule {
     display: flex;
-    margin-top: 30px;
+    flex-direction: column;
+    margin-top: 10px;
     width: 100%;
 
     ul {
@@ -115,7 +116,9 @@
     }
 
     .traveller {
+      display: none;
       flex: none;
+
       margin: 5px 30px;
       margin-top: 4rem;
       padding: 0;
@@ -189,12 +192,27 @@
       justify-content: space-between;
 
       margin-bottom: 20px;
-      padding: 25px 50px;
+      padding: 20px 25px;
     }
+  }
 
-    .schedule-gap {
-      height: 71.3px;
-      margin-bottom: 20px;
+  @media (min-width: 768px) {
+    .schedule {
+      flex-direction: row;
+      margin-top: 30px;
+
+      .traveller {
+        display: unset;
+      }
+
+      .schedule-item {
+        padding: 25px 50px;
+      }
+
+      .schedule-gap {
+        height: 71.3px;
+        margin-bottom: 20px;
+      }
     }
   }
 </style>
