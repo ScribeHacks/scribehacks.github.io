@@ -39,7 +39,7 @@
     },
     {
       name: "Ginni",
-      image: "/img/team/ginni.png"
+      image: "/img/team/ginni.jpg"
     },
     {
       name: "Chenghao",
@@ -78,28 +78,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
 
     max-width: 1100px;
+    margin-right: 0;
     margin: auto;
     padding: 60px 10px;
-
+    }
     h2 {
       font-size: 2rem;
       margin: 0;
     }
+    @media (min-width: 429px) {
 
-    .team-members {
-        /*display: flex;*/
-     display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-gap: 50px;
-      margin-top: 30px;
-      padding: 0;
-
-      max-width: 100%;
-      min-width: 100%;
-      overflow: auto;
+        .team-members {
+            /*display: flex;*/
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, 180px);
+            grid-gap: 50px;
+            margin-top: 30px;
+            padding: 0;
+            padding-left: 25px;
+            
+            max-width: 100%;
+            min-width: 93%;
+            overflow: auto;
+        }
     }
-  }
+    .team-members {
+        align-self: center;
+        align-items: center;
+        width: 180px;
+        display: block;
+        padding-right: 40px;
+    }
 </style>
