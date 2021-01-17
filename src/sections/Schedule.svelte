@@ -59,44 +59,22 @@
     </ul>
     <ul>
       <h3>Sunday</h3>
-      <li class="schedule-item">
-        <div class="col-1">8:00 AM</div>
-        <div class="col-2">Doors Open, Check In</div>
-        <div class="col-3 nav-right">Pending</div>
-      </li>
+      <li class="schedule-gap"></li>
       <li class="schedule-item">
         <div class="col-1">9:00 AM</div>
-        <div class="col-2">Opening Ceremony</div>
+        <div class="col-2">Project Submissions</div>
         <div class="col-3 nav-right">Pending</div>
       </li>
-      <li class="schedule-item">
-        <div class="col-1">10:00 AM</div>
-        <div class="col-2">Hacking Begins</div>
-        <div class="col-3 nav-right">Pending</div>
-      </li>
+      <li class="schedule-gap"></li>
       <li class="schedule-item">
         <div class="col-1">1:00 PM</div>
-        <div class="col-2">Lunch</div>
+        <div class="col-2">Closing Ceremony</div>
         <div class="col-3 nav-right">Pending</div>
       </li>
-      <li class="schedule-item">
-        <div class="col-1">4:00 PM</div>
-        <div class="col-2">Capture The Flag (Digital)</div>
-        <div class="col-3 nav-right">Pending</div>
-      </li>
+      <li class="schedule-gap"></li>
       <li class="schedule-item">
         <div class="col-1">7:00 PM</div>
-        <div class="col-2">Dinner</div>
-        <div class="col-3 nav-right">Pending</div>
-      </li>
-      <li class="schedule-item">
-        <div class="col-1">8:00 PM</div>
-        <div class="col-2">Super Smash Bros. Tournament</div>
-        <div class="col-3 nav-right">Pending</div>
-      </li>
-      <li class="schedule-item">
-        <div class="col-1">12:00 AM</div>
-        <div class="col-2">Midnight Snack</div>
+        <div class="col-2">Virtual Afterparty</div>
         <div class="col-3 nav-right">Pending</div>
       </li>
     </ul>
@@ -212,6 +190,11 @@
 
       margin-bottom: 20px;
       padding: 25px 50px;
+    }
+
+    .schedule-gap {
+      height: 71.3px;
+      margin-bottom: 20px;
     }
   }
 </style>
