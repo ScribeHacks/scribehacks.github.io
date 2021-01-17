@@ -30,17 +30,19 @@
 <style type="text/scss">
   .section {
     background-image: linear-gradient(90deg, #fca, #f88);
-    padding: 60px 10px;
+    padding: 60px 30px;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 
     min-height: 60vh;
     max-width: 1100px;
     margin: auto;
+    text-align: center;
   }
 
   .title {
@@ -52,25 +54,23 @@
       border-radius: 50%;
       box-shadow: #fffa 3px 3px 15px;
 
-      margin-right: 2rem;
-      width: 90px;
+      margin-right: 1rem;
+      width: 3.5rem;
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 2.5rem;
       margin: 10px 0;
     }
   }
 
   .info-group {
     display: flex;
-    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: center;
 
-    span:not(:last-child) {
-      border-right: #333 2px solid;
-      padding-right: 20px;
-      margin-right: 20px;
-    }
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 
   #register-cta {
@@ -80,6 +80,57 @@
     text-decoration: none;
 
     padding: 15px 35px;
+  }
+
+  @media (min-width: 512px) {
+    .hero {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .title {
+      img {
+        margin-right: 1.5rem;
+        width: 4.5rem;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+    .info-group {
+      flex-direction: row;
+      align-items: flex-start;
+      line-height: initial;
+
+      span:not(:last-child) {
+        border-right: #333 2px solid;
+        padding-right: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 60px 20px;
+    }
+
+    .title {
+      img {
+        margin-right: 2rem;
+        width: 5.5rem;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+    
+    .info-group {
+      font-size: 1.5rem;
+    }
   }
 
 </style>
