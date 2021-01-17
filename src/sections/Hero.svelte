@@ -29,7 +29,7 @@
 
 <style type="text/scss">
   .section {
-    background-image: linear-gradient(90deg, #fca, #f88);
+    background-image: linear-gradient(90deg, var(--hero-primary), var(--hero-secondary));
     padding: 60px 30px;
   }
 
@@ -50,9 +50,9 @@
     align-items: center;
 
     img {
-      background-color: #fff;
+      background-color: var(--bg-lightest);
       border-radius: 50%;
-      box-shadow: #fffa 3px 3px 15px;
+      box-shadow: var(--bxs-lightest) 2px 2px 12px;
 
       margin-right: 1rem;
       width: 3.5rem;
@@ -74,9 +74,9 @@
   }
 
   #register-cta {
-    background-color: #f70;
+    background-color: var(--accent-secondary);
     border-radius: 3px;
-    color: #fff;
+    color: var(--text-inverse);
     text-decoration: none;
 
     padding: 15px 35px;
@@ -105,7 +105,7 @@
       line-height: initial;
 
       span:not(:last-child) {
-        border-right: #333 2px solid;
+        border-right: var(--text-dark) 2px solid;
         padding-right: 20px;
         margin-right: 20px;
       }

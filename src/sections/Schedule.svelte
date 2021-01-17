@@ -125,7 +125,6 @@
       position: relative;
 
       .stop {
-        background-color: #0af;
         border-radius: 50%;
         display: block;
 
@@ -161,7 +160,7 @@
         }
 
         &::after {
-          background-color: #fff;
+          background-color: var(--bg-lightest);
           border-radius: 50%;
           content: "";
           position: absolute;
@@ -187,7 +186,7 @@
     }
 
     .schedule-item {
-      box-shadow: #ccc 2px 2px 10px;
+      box-shadow: var(--bxs-lightest) 2px 2px 10px;
       display: flex;
       justify-content: space-between;
 

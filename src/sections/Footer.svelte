@@ -20,7 +20,7 @@
 
 <style type="text/scss">
   .section {
-    background-color: #f8f8f8;
+    background-color: var(--bg-light);
     padding: 10px;
     padding-top: 40px;
     padding-bottom: 80px;

@@ -34,9 +34,9 @@
 
 <style type="text/scss">
   .nav {
-    background-color: #fff;
+    background-color: var(--bg-lightest);
     border-radius: 30px;
-    box-shadow: #555a 2px 2px 10px;
+    box-shadow: var(--bxs-dark) 2px 2px 10px;
     display: flex;
 
     position: fixed;
@@ -53,7 +53,7 @@
   }
 
   .nav-link {
-    color: #f00;
+    color: var(--text-link);
     text-decoration: none;
 
     width: 100px;
@@ -61,8 +61,8 @@
     transition-duration: 0.2s;
 
     &:hover {
-      background-color: #f50;
-      color: #fff;
+      background-color: var(--accent-secondary);
+      color: var(--text-inverse);
     }
   }
 

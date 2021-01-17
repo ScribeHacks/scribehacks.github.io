@@ -11,12 +11,29 @@
 }
 
 :root {
-  /* Theme & Colors */
-  --bg-color: #F8F7F9;
-  --text-color: #2B2D42;
-  --cool-color: #92DCE5;
-  --button-color: #415A77;
-  --paper-color: #F3F0F1;
+  /* Section background colors. */
+  --bg-lightest: #FFF;
+  --bg-light: #F8F8F8;
+  --bg-inverse: #333;
+  --bg-colored: #415A77;
+
+  /* The hero uses these variables. */
+  --hero-primary: #9DE;
+  --hero-secondary: #AAF;
+
+  /* Box shadows for individual components */
+  --bxs-lightest: #CCCA;
+  --bxs-light: #AAAA;
+  --bxs-dark: #555A;
+
+  /* Text colors */
+  --text-dark: #2B2D42;
+  --text-inverse: #FFF;
+  --text-link: #349;
+
+  /* Control colors */
+  --accent-primary: #92DCE5;
+  --accent-secondary: #415A77;
 
   /* Typography */
   font-family: 'CircularStd', sans-serif;

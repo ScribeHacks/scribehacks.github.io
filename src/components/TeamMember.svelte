@@ -20,7 +20,7 @@
 
 <style type="text/scss">
   .team-member {
-    box-shadow: #aaa 2px 2px 10px;
+    box-shadow: var(--bxs-light) 2px 2px 10px;
     border-radius: 5px;
 
     margin-right: 1rem;

@@ -28,7 +28,7 @@
     }
 
     .section-right {
-      background-color: #333;
+      background-color: var(--bg-inverse);
       display: flex;
       justify-content: flex-start;
     }
@@ -42,9 +42,9 @@
     }
 
     p {
-      background-color: #333;
+      background-color: var(--bg-inverse);
       border-radius: 5px;
-      color: #eee;
+      color: var(--text-inverse);
       font-size: 1rem;
       font-weight: 300;
       line-height: 2rem;
@@ -62,11 +62,7 @@
       }
 
       p {
-        background-color: #333;
-        border-radius: 5px;
-        color: #eee;
         font-size: 1.2rem;
-        font-weight: 300;
         line-height: 3rem;
       }
     }

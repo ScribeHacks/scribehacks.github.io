@@ -17,10 +17,10 @@
 
 <style type="text/scss">
   .accordion {
-    background-color: #fff;
+    background-color: var(--bg-lightest);
     border: transparent 2px solid;
     border-radius: 5px;
-    box-shadow: #ddd 2px 2px 10px;
+    box-shadow: var(--bxs-lightest) 2px 2px 10px;
 
     flex: 1 1;
     margin: 5px;
@@ -33,7 +33,7 @@
     transition-timing-function: ease-out;
 
     summary {
-      color: #2b2d42;
+      color: var(--text-dark);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -47,7 +47,7 @@
       padding: 15px;
 
       .icon {
-        border: #333 1px solid;
+        border: var(--text-dark) 1px solid;
         border-radius: 50%;
         display: block;
         height: 20px;
@@ -59,15 +59,15 @@
     &[open] {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      border: #92dce5 2px solid;
+      border: var(--accent-primary) 2px solid;
       border-bottom: none;
       box-shadow: none;
       transform: scale(1.05);
       z-index: 9;
 
       .icon {
-        background-color: #92dce5;
-        border-color: #92dce5;
+        background-color: var(--accent-primary);
+        border-color: var(--accent-primary);
       }
 
       .content {
@@ -76,10 +76,10 @@
     }
 
     .content {
-      background-color: #fff;
+      background-color: var(--bg-lightest);
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      border: #92dce5 2px solid;
+      border: var(--accent-primary) 2px solid;
       border-top: none;
       opacity: 0;
 

@@ -22,8 +22,8 @@
     }
 
     .section-right {
-      background-color: #EE3268;
-      color: #fff;
+      background-color: var(--bg-colored);
+      color: var(--text-inverse);
       display: flex;
       flex-direction: column;
       align-items: flex-start;
