@@ -26,8 +26,7 @@
     margin: 5px;
     margin-bottom: 15px;
     padding: 5px;
-    min-width: 35%;
-    max-width: 50%;
+    min-width: 90%;
     position: relative;
 
     transition-duration: 0.2s;
@@ -94,6 +93,13 @@
       z-index: 9;
 
       transition-duration: 0.2s;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .accordion {
+      min-width: 35%;
+      max-width: 50%;
     }
   }
 </style>

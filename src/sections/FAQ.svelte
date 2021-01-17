@@ -57,10 +57,10 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 60px 10px;
+    padding: 30px 20px;
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin: 0;
     }
   }
@@ -70,7 +70,17 @@
     max-width: 1100px;
     margin: auto;
     margin-top: 30px;
-    
     flex-wrap: wrap;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 60px 20px;
+
+      h2 {
+        font-size: 2rem;
+        margin: 0;
+      }
+    }
   }
 </style>
