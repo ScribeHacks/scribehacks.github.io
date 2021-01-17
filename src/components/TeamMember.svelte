@@ -33,15 +33,10 @@
     list-style: none;
     overflow: hidden;
 
-    /*.pfp {
-      height: 130px;
-      width: 130px;
-    }*/
-
     .pfp {
-        max-width: 100%;
-        min-height: 65%;
-        display: block;
+      height: 180px;
+      width: 180px;
+      display: block;
     }
 
     .info {
