@@ -14,11 +14,12 @@
 <style type="text/scss">
   .about {
     display: flex;
+    flex-direction: column;
     align-items: center;
 
     .section-left, .section-right {
       flex: 1 1;
-      padding: 30px 60px;
+      padding: 10px 30px;
     }
     
     .section-left {
@@ -37,16 +38,43 @@
     }
 
     h2 {
-      font-size: 3.3rem;
+      font-size: 2.5rem;
     }
 
     p {
       background-color: #333;
       border-radius: 5px;
       color: #eee;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 300;
-      line-height: 3rem;
+      line-height: 2rem;
+    }
+  }
+
+  @media (min-width: 512px) {
+    .about {
+      .section-left, .section-right {
+        padding: 30px 60px;
+      }
+
+      h2 {
+        font-size: 3.3rem;
+      }
+
+      p {
+        background-color: #333;
+        border-radius: 5px;
+        color: #eee;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .about {
+      flex-direction: row;
     }
   }
 </style>
