@@ -1,4 +1,5 @@
 
+<a name="schedule">
 <section class="section">
   <h2>Schedule and Activities</h2>
 
@@ -101,6 +102,7 @@
     </ul>
   </div>
 </section>
+</a>
 
 <style type="text/scss">
   .section {

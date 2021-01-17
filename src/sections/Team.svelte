@@ -61,6 +61,7 @@
   ]
 </script>
 
+<a name="team">
 <section class="section team">
   <h2>The Team</h2>
   <br>
@@ -70,6 +71,7 @@
     {/each}
   </ul>
 </section>
+</a>
 
 <style type="text/scss">
   .team {

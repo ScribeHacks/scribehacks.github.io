@@ -1,9 +1,9 @@
 
 <nav class="nav">
   <a class="nav-link" href="#about">About</a>
-  <a class="nav-link" href="#schedule">Schedule</a>
-  <a class="nav-link" href="#map">Map</a>
   <a class="nav-link" href="#faq">FAQ</a>
+  <a class="nav-link" href="#schedule">Schedule</a>
+  <a class="nav-link" href="#venue">Map</a>
   <a class="nav-link" href="#team">Team</a>
   <a class="nav-link" href="#contact">Contact</a>
 </nav>

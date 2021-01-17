@@ -38,6 +38,7 @@
   ]
 </script>
 
+<a name="faq">
 <section class="section">
   <h2>Frequently Asked Questions</h2>
   <br />
@@ -47,6 +48,7 @@
     {/each}
   </div>
 </section>
+</a>
 
 <style type="text/scss">
   .section {

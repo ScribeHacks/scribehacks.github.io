@@ -1,13 +1,15 @@
 
+<a name="about">
 <section class="section about">
   <div class="section-left">
-    <h2>Write the code of the future.</h2>
+      <h2>Write the code of the future.</h2>
   </div>
   <div class="section-right">
     <p><b>Coding gives us the power to make things.</b><br>
     Every Facebook, Google, and Microsoft started with just a bit of code, so we want to encourage each person to learn to make something impactful or through technology.</p>
   </div>
 </section>
+</a>
 
 <style type="text/scss">
   .about {
