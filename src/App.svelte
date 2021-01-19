@@ -7,6 +7,7 @@
   import Schedule from "./sections/Schedule.svelte";
   import Venue from "./sections/Venue.svelte";
   import Team from "./sections/Team.svelte";
+  import Contact from "./sections/Contact.svelte";
   import Footer from "./sections/Footer.svelte";
 </script>
 
@@ -18,6 +19,7 @@
   <Schedule />
   <Venue />
   <Team />
+  <Contact />
   <Footer />
 </main>
 
