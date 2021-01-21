@@ -26,7 +26,6 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     min-width: 130px;
-    height: 220px;
 
     display: inline-flex;
     flex-direction: column;
@@ -61,11 +60,6 @@
       margin-right: 2rem;
       margin-bottom: 2rem;
       min-width: 180px;
-
-      /*.pfp {
-        height: 180px;
-        width: 180px;
-      }*/
     }
   }
 </style>
