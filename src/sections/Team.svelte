@@ -78,10 +78,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
+    justify-content: center;
 
     max-width: 1100px;
-    margin-right: 0;
     margin: auto;
     padding: 60px 10px;
   }
@@ -94,27 +93,8 @@
   .team-members {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    align-items: auto;
-    align-content: start;
     margin-top: 30px;
     padding: 0;
-    padding-left: 30px;
-
-    max-width: 100%;
-    min-width: 93%;
-    overflow: auto;
-  }
-
-  @media only screen and (max-width: 420px) {
-    .team-members {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      align-content: center;
-    }
   }
 </style>

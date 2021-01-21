@@ -23,8 +23,7 @@
     box-shadow: var(--bxs-light) 2px 2px 10px;
     border-radius: 5px;
 
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
     min-width: 130px;
 
     display: inline-flex;
@@ -57,8 +56,7 @@
 
   @media (min-width: 768px) {
     .team-member {
-      margin-right: 2rem;
-      margin-bottom: 2rem;
+      margin: 1rem;
       min-width: 180px;
     }
   }
