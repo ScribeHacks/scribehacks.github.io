@@ -8,10 +8,10 @@
   <div class="info">
     <p><b>{profile.name}</b></p>
     <div class="socials">
-      <a href="https://linkedin.com/in/sohamb117/">
+      <a href="{profile.github}">
         <img src="/img/social/github.png" alt="GitHub">
       </a>
-      <a href="https://github.com/sohamb117">
+      <a href="{profile.linkedin}">
         <img src="/img/social/linkedin.png" alt="LinkedIn">
       </a>
     </div>
