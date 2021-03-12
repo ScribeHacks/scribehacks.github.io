@@ -17,12 +17,10 @@
       <p class="info-group">
         <span class="subtitle">California Bay Area</span>
         <span class="subtitle">September 18-19</span>
-        <span class="subtitle">Registrations Closed</span>
+        <span class="subtitle">Registrations Open</span>
       </p>
       <br>
-      <p><a id="register-cta" href="https://my.mlh.io/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=token&scope={scopes}">
-        Register Now
-      </a></p>
+      <p><a class="typeform-share button" id="register-cta" href="https://form.typeform.com/to/AnwB5Ngz?typeform-medium=embed-snippet" data-mode="popup" data-size="100" target="_blank">Register </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></p>
     </div>
   </div>
 </section>
