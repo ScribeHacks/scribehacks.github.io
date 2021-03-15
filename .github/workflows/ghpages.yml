@@ -1,8 +1,10 @@
 name: Build and Deploy # From https://github.com/marketplace/actions/deploy-to-github-pages
-on: 
+on:
+  workflow_dispatch:
   push:
     branches:
       - svelte
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
