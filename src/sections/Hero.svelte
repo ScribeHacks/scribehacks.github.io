@@ -1,16 +1,47 @@
-
 <script>
-  // MLH OAuth information
-  let client_id = "f3f66e487f904efac28b5e7102003df0c471ffdb534d3116b828d8c6927f7cf1";
-  let redirect_uri = "https://scribehacks.tech/success";
-  let scopes = "email+demographics+birthday+education+event";
+  import { run } from "tripetto-runner-autoscroll";
+  import Services from "tripetto-services";
+
+  const {
+    definition,
+    styles,
+    l10n,
+    locale,
+    translations,
+    snapshot,
+    attachments,
+    onSubmit,
+    onPause,
+  } = Services.init({
+    token:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic1oxMlNZU3BiM1JQcHE0d3QxMlovdUk5ZVZUaDVjTUR1SDVtNU1JSUwxZz0iLCJkZWZpbml0aW9uIjoicEJqMlJNZHJpeE9qWkRJeDlvanYwK3FWSTl2N0dFcDV5K09qU05tM2YwOD0iLCJ0eXBlIjoiY29sbGVjdCJ9._RGSXj3FB2-5cc2xZqUJXyaMCfrFbdFJc4Ns4MFZZhc",
+  });
+
+  function register() {
+    const formArea = document.getElementById("formArea");
+    if (formArea.style.display == "none") {
+      formArea.style.display = "unset";
+      run({
+        element: formArea /* Or supply your own element here */,
+        definition,
+        styles,
+        l10n,
+        locale,
+        translations,
+        attachments,
+        onSubmit,
+      });
+    } else {
+      formArea.style.display = "none";
+    }
+  }
 </script>
 
 <section class="section">
   <div class="hero">
     <div>
       <div class="title">
-        <img src="img/scribehacks/logo.png" alt="ScribeHacks Logo">
+        <img src="img/scribehacks/logo.png" alt="ScribeHacks Logo" />
         <h1 class="fadeInDown">ScribeHacks I</h1>
       </div>
 
@@ -19,15 +50,25 @@
         <span class="subtitle">September 18-19</span>
         <span class="subtitle">Registrations Open</span>
       </p>
-      <br>
-      <p><a class="typeform-share button" id="register-cta" href="https://form.typeform.com/to/AnwB5Ngz?typeform-medium=embed-snippet" data-mode="popup" data-size="100" target="_blank">Register </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></p>
+      <br />
+      <button
+        id="register-cta"
+        class="button typeform-share"
+        onClick="register()">Register Here!</button
+      >
+      <div id="formArea" style="display: none" />
     </div>
   </div>
 </section>
 
+<!--       <p><a class="typeform-share button" id="register-cta" href="https://form.typeform.com/to/AnwB5Ngz?typeform-medium=embed-snippet" data-mode="popup" data-size="100" target="_blank">Register </a> <script ✂prettier:content✂="IChmdW5jdGlvbigpIHsgdmFyIHFzLGpzLHEscyxkPWRvY3VtZW50LCBnaT1kLmdldEVsZW1lbnRCeUlkLCBjZT1kLmNyZWF0ZUVsZW1lbnQsIGd0PWQuZ2V0RWxlbWVudHNCeVRhZ05hbWUsIGlkPSJ0eXBlZl9vcm1fc2hhcmUiLCBiPSJodHRwczovL2VtYmVkLnR5cGVmb3JtLmNvbS8iOyBpZighZ2kuY2FsbChkLGlkKSl7IGpzPWNlLmNhbGwoZCwic2NyaXB0Iik7IGpzLmlkPWlkOyBqcy5zcmM9YisiZW1iZWQuanMiOyBxPWd0LmNhbGwoZCwic2NyaXB0IilbMF07IHEucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoanMscSkgfSB9KSgpIA==" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script></p> -->
 <style type="text/scss">
   .section {
-    background-image: linear-gradient(90deg, var(--hero-primary), var(--hero-secondary));
+    background-image: linear-gradient(
+      90deg,
+      var(--hero-primary),
+      var(--hero-secondary)
+    );
     padding: 60px 30px;
   }
 
@@ -125,10 +166,9 @@
         font-size: 5rem;
       }
     }
-    
+
     .info-group {
       font-size: 1.5rem;
     }
   }
-
 </style>
