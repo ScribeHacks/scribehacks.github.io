@@ -1,35 +1,24 @@
 <script>
-  import { run } from "tripetto-runner-autoscroll";
-  import Services from "tripetto-services";
-
-  const {
-    definition,
-    styles,
-    l10n,
-    locale,
-    translations,
-    snapshot,
-    attachments,
-    onSubmit,
-    onPause,
-  } = Services.init({
-    token:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic1oxMlNZU3BiM1JQcHE0d3QxMlovdUk5ZVZUaDVjTUR1SDVtNU1JSUwxZz0iLCJkZWZpbml0aW9uIjoicEJqMlJNZHJpeE9qWkRJeDlvanYwK3FWSTl2N0dFcDV5K09qU05tM2YwOD0iLCJ0eXBlIjoiY29sbGVjdCJ9._RGSXj3FB2-5cc2xZqUJXyaMCfrFbdFJc4Ns4MFZZhc",
-  });
-
   function register() {
     const formArea = document.getElementById("formArea");
+    var tripetto = TripettoServices.init({
+      token:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic1oxMlNZU3BiM1JQcHE0d3QxMlovdUk5ZVZUaDVjTUR1SDVtNU1JSUwxZz0iLCJkZWZpbml0aW9uIjoicEJqMlJNZHJpeE9qWkRJeDlvanYwK3FWSTl2N0dFcDV5K09qU05tM2YwOD0iLCJ0eXBlIjoiY29sbGVjdCJ9._RGSXj3FB2-5cc2xZqUJXyaMCfrFbdFJc4Ns4MFZZhc",
+    });
     if (formArea.style.display == "none") {
       formArea.style.display = "unset";
-      run({
-        element: formArea /* Or supply your own element here */,
-        definition,
-        styles,
-        l10n,
-        locale,
-        translations,
-        attachments,
-        onSubmit,
+      TripettoAutoscroll.run({
+        element: document.getElementById("formArea"),
+        definition: tripetto.definition,
+        styles: tripetto.styles,
+        l10n: tripetto.l10n,
+        locale: tripetto.locale,
+        translations: tripetto.translations,
+        attachments: tripetto.attachments,
+        onSubmit: tripetto.onSubmit,
+        snapshot: tripetto.snapshot,
+        onPause: tripetto.onPause,
+        persistent: true,
       });
     } else {
       formArea.style.display = "none";
@@ -51,17 +40,15 @@
         <span class="subtitle">Registrations Open</span>
       </p>
       <br />
-      <button
-        id="register-cta"
-        class="button typeform-share"
-        onClick="register()">Register Here!</button
+      <button id="register-cta" class="button" on:click={register}
+        >Register Here!</button
       >
-      <div id="formArea" style="display: none" />
+      <br />
+      <div id="formArea" />
     </div>
   </div>
 </section>
 
-<!--       <p><a class="typeform-share button" id="register-cta" href="https://form.typeform.com/to/AnwB5Ngz?typeform-medium=embed-snippet" data-mode="popup" data-size="100" target="_blank">Register </a> <script ✂prettier:content✂="IChmdW5jdGlvbigpIHsgdmFyIHFzLGpzLHEscyxkPWRvY3VtZW50LCBnaT1kLmdldEVsZW1lbnRCeUlkLCBjZT1kLmNyZWF0ZUVsZW1lbnQsIGd0PWQuZ2V0RWxlbWVudHNCeVRhZ05hbWUsIGlkPSJ0eXBlZl9vcm1fc2hhcmUiLCBiPSJodHRwczovL2VtYmVkLnR5cGVmb3JtLmNvbS8iOyBpZighZ2kuY2FsbChkLGlkKSl7IGpzPWNlLmNhbGwoZCwic2NyaXB0Iik7IGpzLmlkPWlkOyBqcy5zcmM9YisiZW1iZWQuanMiOyBxPWd0LmNhbGwoZCwic2NyaXB0IilbMF07IHEucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoanMscSkgfSB9KSgpIA==" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script></p> -->
 <style type="text/scss">
   .section {
     background-image: linear-gradient(
@@ -82,6 +69,12 @@
     max-width: 1100px;
     margin: auto;
     text-align: center;
+  }
+
+  #formArea {
+    text-align: center;
+    left: 50%;
+    display: none;
   }
 
   .title {
@@ -118,7 +111,7 @@
     color: var(--text-inverse);
     text-decoration: none;
 
-    padding: 15px 35px;
+    padding: 15px 35px 15px;
   }
 
   @media (min-width: 512px) {

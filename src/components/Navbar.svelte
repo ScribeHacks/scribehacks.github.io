@@ -11,7 +11,6 @@
     window.addEventListener("resize", handleResize);
   });
   function handleResize(): void {
-    console.log("hi")
     if (window.innerWidth > 768)
       isCollapsed = false;
     else isCollapsed = true;
@@ -43,7 +42,7 @@
     top: 30px;
     right: 30px;
     z-index: 10;
-    
+
     overflow: hidden;
 
     .collapsable {
