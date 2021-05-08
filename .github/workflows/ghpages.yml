@@ -19,6 +19,10 @@ jobs:
           npm install
           npm run build
 
+      - name: Add CNAME
+        run: |
+          echo "scribehacks.tech" >> ./public/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
