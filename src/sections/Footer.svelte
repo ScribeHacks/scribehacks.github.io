@@ -1,7 +1,7 @@
 
 <footer class="section footer">
   <p class="social-links">
-    <a href="">
+    <a href="https://discord.com">
       <img src="/img/social/discord.png" alt="Discord">
     </a>
     <a href="https://github.com/ScribeHacks">
