@@ -5,8 +5,10 @@
 
 <details class="accordion">
   <summary>
-    <span class="title">{faq.title}</span>
-    <span class="icon" aria-hidden="true" />
+    <span>
+      <span class="title">{faq.title}</span>
+      <span class="icon" aria-hidden="true" />
+    </span>
   </summary>
   <div class="content">
     <p>
@@ -33,6 +35,15 @@
     transition-timing-function: ease-out;
 
     summary {
+      list-style: none;
+      outline: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary > span {
       color: var(--text-dark);
       display: flex;
       align-items: center;
@@ -49,7 +60,7 @@
       .icon {
         border: var(--text-dark) 1px solid;
         border-radius: 50%;
-        display: block;
+        display: inline-block;
         height: 20px;
         width: 20px;
         transition-duration: 0.2s;
