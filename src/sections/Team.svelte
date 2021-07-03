@@ -62,18 +62,24 @@
 </script>
 
 <a name="team">
-  <section class="section team">
-    <h2>The Team</h2>
-    <br />
-    <ul class="team-members">
-      {#each people as profile}
-        <TeamMember {profile} />
-      {/each}
-    </ul>
+  <section class="section">
+		<div class="team">
+			<h2>The Team</h2>
+			<br />
+			<ul class="team-members">
+				{#each people as profile}
+					<TeamMember {profile} />
+				{/each}
+			</ul>
+		</div>
   </section>
 </a>
 
 <style type="text/scss">
+	.section {
+    background-color: var(--bg-light);
+	}
+
   .team {
     display: flex;
     flex-direction: column;

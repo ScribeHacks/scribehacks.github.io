@@ -14,10 +14,6 @@
 </a>
 
 <style type="text/scss">
-  .section {
-    background-color: var(--bg-light);
-  }
-
   .contact {
     max-width: 700px;
     margin: auto;

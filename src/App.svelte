@@ -6,6 +6,8 @@
   import FAQ from "./sections/FAQ.svelte";
   import Schedule from "./sections/Schedule.svelte";
   import Venue from "./sections/Venue.svelte";
+	import Explainers from "./sections/Explainers.svelte";
+	import Speakers from "./sections/Speakers.svelte";
   import Team from "./sections/Team.svelte";
   import Contact from "./sections/Contact.svelte";
   import Footer from "./sections/Footer.svelte";
@@ -15,9 +17,11 @@
   <Navbar />
   <Hero />
   <About />
-  <FAQ />
+	<Explainers />
   <Schedule />
   <Venue />
+  <FAQ />
+	<Speakers />
   <Team />
   <Contact />
   <Footer />
