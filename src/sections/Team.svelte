@@ -16,21 +16,10 @@
       gh: "https://github.com/SDBagel",
     },
     {
-      name: "Kai",
-      image: "/img/team/kai.png",
-      in: "https://www.linkedin.com/in/kai-mccormick/",
-      gh: "https://github.com/kaidevrim",
-    },
-    {
       name: "Rohan",
       image: "/img/team/rohan.jpg",
       in: "https://linkedin.com/in/bansal-rohan",
       gh: "https://github.com/rohan-bansal",
-    },
-    {
-      name: "Shreya",
-      image: "/img/team/shreya.jpg",
-      gh: "https://github.com/shreyaparikh08",
     },
     {
       name: "Aparna",
