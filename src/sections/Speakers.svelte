@@ -8,9 +8,9 @@
 		<h2>Event Speakers</h2>
 		<div class="speakers">
 			<RevealItem
-				title="Zach Latta" tag="A Super Cool Person"
+				title="Zach Latta" tag="Founding Hack Club"
 				imgHref="img/scribehacks/zach.png">
-				[ Placeholder dedscription ]
+				Q&A and a talk with Zach Latta, the founder of Hack Club. <br> <b> September 18 - 5 PM
 			</RevealItem>
 		</div>
 	</section>
