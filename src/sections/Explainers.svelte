@@ -10,7 +10,7 @@
 			<RevealItem
 				title="Scoring System" tag="Encouraging Originality and Quality"
 				imgHref="img/scribehacks/hash.png">
-				[ Placeholder text about scoring ]
+				Our scoring system is designed to encourage original and creative scoring. We'll be using a rubric based system to allow our judges to really look at which projects are best. Read more.
 			</RevealItem>
 			<RevealItem
 				title="Prize Pool" tag="Choose Your Own Prize"
@@ -20,7 +20,7 @@
 			<RevealItem
 				title="Mentor Tracks" tag="Helping Beginners Start"
 				imgHref="img/scribehacks/hash.png">
-				[ Placeholder text about mentor tracks ]
+				We'll be pairing beginner teams with mentors so that each attendee has someone to contact for help. We'll also be providing a separate prize for beginners. Read more here.
 			</RevealItem>
 		</div>
 	</section>
