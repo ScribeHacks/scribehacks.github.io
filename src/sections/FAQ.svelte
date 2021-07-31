@@ -5,7 +5,7 @@
   const faq = [
     {
       title: "Who can participate?",
-      content: "We allow those in middle school to join us, but only with parental permission. If you are in college, you are welcome to mentor or give speeches at the hackathon. If you want to be a mentor, you can <a target=\"_blank\" href=\"https://sohamb117.typeform.com/to/pq7eingx\">sign up here</a> or if you want to sponsor you can email us at <a href=\"mailto:sponsorship@scribehacks.tech\">sponsorship@scribehacks.tech</a>"
+      content: "Our event is open for middle and high schoolers. If you are in college, you are welcome to mentor or give speeches at the hackathon. If you want to be a mentor, you can <a target=\"_blank\" href=\"https://sohamb117.typeform.com/to/pq7eingx\">sign up here</a> or if you want to sponsor you can email us at <a href=\"mailto:sponsorship@scribehacks.tech\">sponsorship@scribehacks.tech</a>"
     },
     {
       title: "What can we make?",
@@ -21,11 +21,11 @@
     },
     {
       title: "Does it cost anything?",
-      content: "ScribeHacks is absolutely free! There is no entry fee, ScribeHacks will provide you with plenty of food, snacks, swag, and prizes throughout the 24 hours. We can provide all of this due to our wonderful sponsors!"
+      content: "ScribeHacks is absolutely free! There is no entry fee, but we'll be providing swag and prizes after the event ends. We can provide all of this due to our wonderful sponsors!"
     },
     {
       title: "What should I bring?",
-      content: "Please bring a valid form of identification like a student id or driver's license, a computer (preferably a laptop), chargers, and any hardware you will use for your hack. You can also bring a sleeping bag, pillow, toiletries, and a couple changes of clothes. Food will be provided at the event. No firearms, weapons, alcohol, or illegal drugs are allowed on campus."
+      content: "Our event is virtual this year, but you'll need to have a reliable internet connection. In addition, we'll be using Zoom to hold events, so you'll want that installed. Having a GitHub and Devpost account set up will also help."
     },
     {
       title: "How do I prepare?",
