@@ -37,11 +37,6 @@
         <div class="col-3">Pending</div>
       </li>
       <li class="schedule-item">
-        <div class="col-1">8:00 PM</div>
-        <div class="col-2">Super Smash Bros. Tournament</div>
-        <div class="col-3">Pending</div>
-      </li>
-      <li class="schedule-item">
         <div class="col-1">12:00 AM</div>
         <div class="col-2">Midnight Snack</div>
         <div class="col-3">Pending</div>
