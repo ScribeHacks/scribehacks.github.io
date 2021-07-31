@@ -6,7 +6,10 @@
   </div>
   <div class="section-right">
     <h2>Venue</h2>
-    <p>San Franciso Bay Area - TBD</p>
+    <p>
+    <b>Virtual</b> <br>
+    Located in the Bay Area. All times are in PST.
+    </p>
   </div>
 </section>
 </a>
