@@ -5,7 +5,7 @@
 	export let imgHref: string;
 </script>
 
-<section class="reveal-item">
+<section class="reveal-item" tabindex="0">
 	<img src="{imgHref}" alt="{title}">
 	<h3>{title}</h3>
 	<div class="text-container">
@@ -56,7 +56,7 @@
 			max-height: 80px;
 		}
 
-		&:hover {
+		&:hover, &:focus {
 			.post-reveal {
 				max-height: 115px;
 				opacity: 1;

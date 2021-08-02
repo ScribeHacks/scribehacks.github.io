@@ -46,5 +46,9 @@
 		flex-direction: row;
     margin: 30px 0;
 		grid-gap: 50px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 </style>

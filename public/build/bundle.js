@@ -1995,17 +1995,18 @@ var app = (function () {
     			if (default_slot) default_slot.c();
     			if (img.src !== (img_src_value = /*imgHref*/ ctx[2])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", /*title*/ ctx[0]);
-    			attr_dev(img, "class", "svelte-sztrak");
-    			add_location(img, file$7, 7, 1, 122);
-    			attr_dev(h3, "class", "svelte-sztrak");
-    			add_location(h3, file$7, 8, 1, 160);
-    			attr_dev(p0, "class", "pre-reveal svelte-sztrak");
-    			add_location(p0, file$7, 10, 2, 211);
-    			attr_dev(p1, "class", "post-reveal svelte-sztrak");
-    			add_location(p1, file$7, 11, 2, 246);
-    			attr_dev(div, "class", "text-container svelte-sztrak");
-    			add_location(div, file$7, 9, 1, 179);
-    			attr_dev(section, "class", "reveal-item svelte-sztrak");
+    			attr_dev(img, "class", "svelte-e0zf6r");
+    			add_location(img, file$7, 7, 1, 135);
+    			attr_dev(h3, "class", "svelte-e0zf6r");
+    			add_location(h3, file$7, 8, 1, 173);
+    			attr_dev(p0, "class", "pre-reveal svelte-e0zf6r");
+    			add_location(p0, file$7, 10, 2, 224);
+    			attr_dev(p1, "class", "post-reveal svelte-e0zf6r");
+    			add_location(p1, file$7, 11, 2, 259);
+    			attr_dev(div, "class", "text-container svelte-e0zf6r");
+    			add_location(div, file$7, 9, 1, 192);
+    			attr_dev(section, "class", "reveal-item svelte-e0zf6r");
+    			attr_dev(section, "tabindex", "0");
     			add_location(section, file$7, 6, 0, 90);
     		},
     		l: function claim(nodes) {
@@ -2304,11 +2305,11 @@ var app = (function () {
     			create_component(revealitem1.$$.fragment);
     			t3 = space();
     			create_component(revealitem2.$$.fragment);
-    			attr_dev(h2, "class", "svelte-qs0l0s");
+    			attr_dev(h2, "class", "svelte-m1namu");
     			add_location(h2, file$8, 6, 2, 145);
-    			attr_dev(div, "class", "explainers svelte-qs0l0s");
+    			attr_dev(div, "class", "explainers svelte-m1namu");
     			add_location(div, file$8, 7, 2, 175);
-    			attr_dev(section, "class", "section svelte-qs0l0s");
+    			attr_dev(section, "class", "section svelte-m1namu");
     			add_location(section, file$8, 5, 1, 116);
     			attr_dev(a, "name", "explainers");
     			add_location(a, file$8, 4, 0, 92);
