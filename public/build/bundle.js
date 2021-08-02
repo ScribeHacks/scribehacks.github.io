@@ -1161,14 +1161,14 @@ var app = (function () {
     			}
 
     			attr_dev(h2, "class", "svelte-19egonz");
-    			add_location(h2, file$4, 40, 2, 3214);
-    			add_location(br, file$4, 41, 2, 3253);
+    			add_location(h2, file$4, 40, 2, 3005);
+    			add_location(br, file$4, 41, 2, 3044);
     			attr_dev(div, "class", "faq svelte-19egonz");
-    			add_location(div, file$4, 42, 2, 3263);
+    			add_location(div, file$4, 42, 2, 3054);
     			attr_dev(section, "class", "section svelte-19egonz");
-    			add_location(section, file$4, 39, 0, 3185);
+    			add_location(section, file$4, 39, 0, 2976);
     			attr_dev(a, "name", "faq");
-    			add_location(a, file$4, 38, 0, 3169);
+    			add_location(a, file$4, 38, 0, 2960);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1259,7 +1259,7 @@ var app = (function () {
     	const faq = [
     		{
     			title: "Who can participate?",
-    			content: "We allow those in middle school to join us, but only with parental permission. If you are in college, you are welcome to mentor or give speeches at the hackathon. If you want to be a mentor, you can <a target=\"_blank\" href=\"https://sohamb117.typeform.com/to/pq7eingx\">sign up here</a> or if you want to sponsor you can email us at <a href=\"mailto:sponsorship@scribehacks.tech\">sponsorship@scribehacks.tech</a>"
+    			content: "Our event is open for middle and high schoolers. If you are in college, you are welcome to mentor or give speeches at the hackathon. If you want to be a mentor, you can <a target=\"_blank\" href=\"https://sohamb117.typeform.com/to/pq7eingx\">sign up here</a> or if you want to sponsor you can email us at <a href=\"mailto:sponsorship@scribehacks.tech\">sponsorship@scribehacks.tech</a>"
     		},
     		{
     			title: "What can we make?",
@@ -1275,11 +1275,11 @@ var app = (function () {
     		},
     		{
     			title: "Does it cost anything?",
-    			content: "ScribeHacks is absolutely free! There is no entry fee, ScribeHacks will provide you with plenty of food, snacks, swag, and prizes throughout the 24 hours. We can provide all of this due to our wonderful sponsors!"
+    			content: "ScribeHacks is absolutely free! There is no entry fee, but we'll be providing swag and prizes after the event ends. We can provide all of this due to our wonderful sponsors!"
     		},
     		{
     			title: "What should I bring?",
-    			content: "Please bring a valid form of identification like a student id or driver's license, a computer (preferably a laptop), chargers, and any hardware you will use for your hack. You can also bring a sleeping bag, pillow, toiletries, and a couple changes of clothes. Food will be provided at the event. No firearms, weapons, alcohol, or illegal drugs are allowed on campus."
+    			content: "Our event is virtual this year, but you'll need to have a reliable internet connection. In addition, we'll be using Zoom to hold events, so you'll want that installed. Having a GitHub and Devpost account set up will also help."
     		},
     		{
     			title: "How do I prepare?",
@@ -1324,7 +1324,7 @@ var app = (function () {
     	let section;
     	let h2;
     	let t1;
-    	let div33;
+    	let div30;
     	let ul0;
     	let h30;
     	let t3;
@@ -1377,59 +1377,52 @@ var app = (function () {
     	let t43;
     	let div20;
     	let t45;
-    	let li7;
-    	let div21;
-    	let t47;
-    	let div22;
-    	let t49;
-    	let div23;
-    	let t51;
     	let ul1;
+    	let li7;
+    	let t46;
     	let li8;
-    	let t52;
+    	let t47;
     	let li9;
-    	let t53;
+    	let t48;
     	let li10;
-    	let t54;
+    	let t49;
     	let li11;
-    	let t55;
+    	let t50;
     	let li12;
-    	let t56;
+    	let t51;
     	let li13;
-    	let t57;
+    	let t52;
     	let li14;
-    	let t58;
-    	let li15;
-    	let t59;
+    	let t53;
     	let ul2;
     	let h31;
-    	let t61;
+    	let t55;
+    	let li15;
+    	let t56;
     	let li16;
+    	let div21;
+    	let t58;
+    	let div22;
+    	let t60;
+    	let div23;
     	let t62;
     	let li17;
-    	let div24;
-    	let t64;
-    	let div25;
-    	let t66;
-    	let div26;
-    	let t68;
+    	let t63;
     	let li18;
+    	let div24;
+    	let t65;
+    	let div25;
+    	let t67;
+    	let div26;
     	let t69;
     	let li19;
-    	let div27;
-    	let t71;
-    	let div28;
-    	let t73;
-    	let div29;
-    	let t75;
+    	let t70;
     	let li20;
-    	let t76;
-    	let li21;
-    	let div30;
-    	let t78;
-    	let div31;
-    	let t80;
-    	let div32;
+    	let div27;
+    	let t72;
+    	let div28;
+    	let t74;
+    	let div29;
 
     	const block = {
     		c: function create() {
@@ -1438,7 +1431,7 @@ var app = (function () {
     			h2 = element("h2");
     			h2.textContent = "Schedule and Activities";
     			t1 = space();
-    			div33 = element("div");
+    			div30 = element("div");
     			ul0 = element("ul");
     			h30 = element("h3");
     			h30.textContent = "Saturday";
@@ -1505,80 +1498,70 @@ var app = (function () {
     			t39 = space();
     			li6 = element("li");
     			div18 = element("div");
-    			div18.textContent = "8:00 PM";
+    			div18.textContent = "12:00 AM";
     			t41 = space();
     			div19 = element("div");
-    			div19.textContent = "Super Smash Bros. Tournament";
+    			div19.textContent = "Midnight Snack";
     			t43 = space();
     			div20 = element("div");
     			div20.textContent = "Pending";
     			t45 = space();
-    			li7 = element("li");
-    			div21 = element("div");
-    			div21.textContent = "12:00 AM";
-    			t47 = space();
-    			div22 = element("div");
-    			div22.textContent = "Midnight Snack";
-    			t49 = space();
-    			div23 = element("div");
-    			div23.textContent = "Pending";
-    			t51 = space();
     			ul1 = element("ul");
+    			li7 = element("li");
+    			t46 = space();
     			li8 = element("li");
-    			t52 = space();
+    			t47 = space();
     			li9 = element("li");
-    			t53 = space();
+    			t48 = space();
     			li10 = element("li");
-    			t54 = space();
+    			t49 = space();
     			li11 = element("li");
-    			t55 = space();
+    			t50 = space();
     			li12 = element("li");
-    			t56 = space();
+    			t51 = space();
     			li13 = element("li");
-    			t57 = space();
+    			t52 = space();
     			li14 = element("li");
-    			t58 = space();
-    			li15 = element("li");
-    			t59 = space();
+    			t53 = space();
     			ul2 = element("ul");
     			h31 = element("h3");
     			h31.textContent = "Sunday";
-    			t61 = space();
+    			t55 = space();
+    			li15 = element("li");
+    			t56 = space();
     			li16 = element("li");
+    			div21 = element("div");
+    			div21.textContent = "9:00 AM";
+    			t58 = space();
+    			div22 = element("div");
+    			div22.textContent = "Project Submissions";
+    			t60 = space();
+    			div23 = element("div");
+    			div23.textContent = "Pending";
     			t62 = space();
     			li17 = element("li");
+    			t63 = space();
+    			li18 = element("li");
     			div24 = element("div");
-    			div24.textContent = "9:00 AM";
-    			t64 = space();
+    			div24.textContent = "1:00 PM";
+    			t65 = space();
     			div25 = element("div");
-    			div25.textContent = "Project Submissions";
-    			t66 = space();
+    			div25.textContent = "Closing Ceremony";
+    			t67 = space();
     			div26 = element("div");
     			div26.textContent = "Pending";
-    			t68 = space();
-    			li18 = element("li");
     			t69 = space();
     			li19 = element("li");
+    			t70 = space();
+    			li20 = element("li");
     			div27 = element("div");
-    			div27.textContent = "1:00 PM";
-    			t71 = space();
+    			div27.textContent = "7:00 PM";
+    			t72 = space();
     			div28 = element("div");
-    			div28.textContent = "Closing Ceremony";
-    			t73 = space();
+    			div28.textContent = "Virtual Afterparty";
+    			t74 = space();
     			div29 = element("div");
     			div29.textContent = "Pending";
-    			t75 = space();
-    			li20 = element("li");
-    			t76 = space();
-    			li21 = element("li");
-    			div30 = element("div");
-    			div30.textContent = "7:00 PM";
-    			t78 = space();
-    			div31 = element("div");
-    			div31.textContent = "Virtual Afterparty";
-    			t80 = space();
-    			div32 = element("div");
-    			div32.textContent = "Pending";
     			attr_dev(h2, "class", "svelte-m1ibvs");
     			add_location(h2, file$5, 3, 2, 52);
     			add_location(h30, file$5, 7, 6, 130);
@@ -1633,75 +1616,67 @@ var app = (function () {
     			attr_dev(div18, "class", "col-1");
     			add_location(div18, file$5, 39, 8, 1275);
     			attr_dev(div19, "class", "col-2");
-    			add_location(div19, file$5, 40, 8, 1317);
+    			add_location(div19, file$5, 40, 8, 1318);
     			attr_dev(div20, "class", "col-3");
-    			add_location(div20, file$5, 41, 8, 1380);
+    			add_location(div20, file$5, 41, 8, 1367);
     			attr_dev(li6, "class", "schedule-item svelte-m1ibvs");
     			add_location(li6, file$5, 38, 6, 1239);
-    			attr_dev(div21, "class", "col-1");
-    			add_location(div21, file$5, 44, 8, 1469);
-    			attr_dev(div22, "class", "col-2");
-    			add_location(div22, file$5, 45, 8, 1512);
-    			attr_dev(div23, "class", "col-3");
-    			add_location(div23, file$5, 46, 8, 1561);
-    			attr_dev(li7, "class", "schedule-item svelte-m1ibvs");
-    			add_location(li7, file$5, 43, 6, 1433);
     			attr_dev(ul0, "class", "svelte-m1ibvs");
     			add_location(ul0, file$5, 6, 4, 118);
+    			attr_dev(li7, "class", "stop svelte-m1ibvs");
+    			add_location(li7, file$5, 45, 6, 1478);
     			attr_dev(li8, "class", "stop svelte-m1ibvs");
-    			add_location(li8, file$5, 50, 6, 1672);
+    			add_location(li8, file$5, 46, 6, 1508);
     			attr_dev(li9, "class", "stop svelte-m1ibvs");
-    			add_location(li9, file$5, 51, 6, 1702);
+    			add_location(li9, file$5, 47, 6, 1538);
     			attr_dev(li10, "class", "stop svelte-m1ibvs");
-    			add_location(li10, file$5, 52, 6, 1732);
+    			add_location(li10, file$5, 48, 6, 1568);
     			attr_dev(li11, "class", "stop svelte-m1ibvs");
-    			add_location(li11, file$5, 53, 6, 1762);
+    			add_location(li11, file$5, 49, 6, 1598);
     			attr_dev(li12, "class", "stop svelte-m1ibvs");
-    			add_location(li12, file$5, 54, 6, 1792);
+    			add_location(li12, file$5, 50, 6, 1628);
     			attr_dev(li13, "class", "stop svelte-m1ibvs");
-    			add_location(li13, file$5, 55, 6, 1822);
+    			add_location(li13, file$5, 51, 6, 1658);
     			attr_dev(li14, "class", "stop svelte-m1ibvs");
-    			add_location(li14, file$5, 56, 6, 1852);
-    			attr_dev(li15, "class", "stop svelte-m1ibvs");
-    			add_location(li15, file$5, 57, 6, 1882);
+    			add_location(li14, file$5, 52, 6, 1688);
     			attr_dev(ul1, "class", "traveller svelte-m1ibvs");
     			attr_dev(ul1, "aria-hidden", "true");
-    			add_location(ul1, file$5, 49, 4, 1623);
-    			add_location(h31, file$5, 60, 6, 1933);
-    			attr_dev(li16, "class", "schedule-gap svelte-m1ibvs");
-    			add_location(li16, file$5, 61, 6, 1956);
+    			add_location(ul1, file$5, 44, 4, 1429);
+    			add_location(h31, file$5, 55, 6, 1739);
+    			attr_dev(li15, "class", "schedule-gap svelte-m1ibvs");
+    			add_location(li15, file$5, 56, 6, 1762);
+    			attr_dev(div21, "class", "col-1");
+    			add_location(div21, file$5, 58, 8, 1836);
+    			attr_dev(div22, "class", "col-2");
+    			add_location(div22, file$5, 59, 8, 1878);
+    			attr_dev(div23, "class", "col-3");
+    			add_location(div23, file$5, 60, 8, 1932);
+    			attr_dev(li16, "class", "schedule-item svelte-m1ibvs");
+    			add_location(li16, file$5, 57, 6, 1800);
+    			attr_dev(li17, "class", "schedule-gap svelte-m1ibvs");
+    			add_location(li17, file$5, 62, 6, 1985);
     			attr_dev(div24, "class", "col-1");
-    			add_location(div24, file$5, 63, 8, 2030);
+    			add_location(div24, file$5, 64, 8, 2059);
     			attr_dev(div25, "class", "col-2");
-    			add_location(div25, file$5, 64, 8, 2072);
+    			add_location(div25, file$5, 65, 8, 2101);
     			attr_dev(div26, "class", "col-3");
-    			add_location(div26, file$5, 65, 8, 2126);
-    			attr_dev(li17, "class", "schedule-item svelte-m1ibvs");
-    			add_location(li17, file$5, 62, 6, 1994);
-    			attr_dev(li18, "class", "schedule-gap svelte-m1ibvs");
-    			add_location(li18, file$5, 67, 6, 2179);
+    			add_location(div26, file$5, 66, 8, 2152);
+    			attr_dev(li18, "class", "schedule-item svelte-m1ibvs");
+    			add_location(li18, file$5, 63, 6, 2023);
+    			attr_dev(li19, "class", "schedule-gap svelte-m1ibvs");
+    			add_location(li19, file$5, 68, 6, 2205);
     			attr_dev(div27, "class", "col-1");
-    			add_location(div27, file$5, 69, 8, 2253);
+    			add_location(div27, file$5, 70, 8, 2279);
     			attr_dev(div28, "class", "col-2");
-    			add_location(div28, file$5, 70, 8, 2295);
+    			add_location(div28, file$5, 71, 8, 2321);
     			attr_dev(div29, "class", "col-3");
-    			add_location(div29, file$5, 71, 8, 2346);
-    			attr_dev(li19, "class", "schedule-item svelte-m1ibvs");
-    			add_location(li19, file$5, 68, 6, 2217);
-    			attr_dev(li20, "class", "schedule-gap svelte-m1ibvs");
-    			add_location(li20, file$5, 73, 6, 2399);
-    			attr_dev(div30, "class", "col-1");
-    			add_location(div30, file$5, 75, 8, 2473);
-    			attr_dev(div31, "class", "col-2");
-    			add_location(div31, file$5, 76, 8, 2515);
-    			attr_dev(div32, "class", "col-3");
-    			add_location(div32, file$5, 77, 8, 2568);
-    			attr_dev(li21, "class", "schedule-item svelte-m1ibvs");
-    			add_location(li21, file$5, 74, 6, 2437);
+    			add_location(div29, file$5, 72, 8, 2374);
+    			attr_dev(li20, "class", "schedule-item svelte-m1ibvs");
+    			add_location(li20, file$5, 69, 6, 2243);
     			attr_dev(ul2, "class", "svelte-m1ibvs");
-    			add_location(ul2, file$5, 59, 4, 1921);
-    			attr_dev(div33, "class", "schedule svelte-m1ibvs");
-    			add_location(div33, file$5, 5, 2, 90);
+    			add_location(ul2, file$5, 54, 4, 1727);
+    			attr_dev(div30, "class", "schedule svelte-m1ibvs");
+    			add_location(div30, file$5, 5, 2, 90);
     			attr_dev(section, "class", "section svelte-m1ibvs");
     			add_location(section, file$5, 2, 0, 23);
     			attr_dev(a, "name", "schedule");
@@ -1715,8 +1690,8 @@ var app = (function () {
     			append_dev(a, section);
     			append_dev(section, h2);
     			append_dev(section, t1);
-    			append_dev(section, div33);
-    			append_dev(div33, ul0);
+    			append_dev(section, div30);
+    			append_dev(div30, ul0);
     			append_dev(ul0, h30);
     			append_dev(ul0, t3);
     			append_dev(ul0, li0);
@@ -1767,60 +1742,53 @@ var app = (function () {
     			append_dev(li6, div19);
     			append_dev(li6, t43);
     			append_dev(li6, div20);
-    			append_dev(ul0, t45);
-    			append_dev(ul0, li7);
-    			append_dev(li7, div21);
-    			append_dev(li7, t47);
-    			append_dev(li7, div22);
-    			append_dev(li7, t49);
-    			append_dev(li7, div23);
-    			append_dev(div33, t51);
-    			append_dev(div33, ul1);
+    			append_dev(div30, t45);
+    			append_dev(div30, ul1);
+    			append_dev(ul1, li7);
+    			append_dev(ul1, t46);
     			append_dev(ul1, li8);
-    			append_dev(ul1, t52);
+    			append_dev(ul1, t47);
     			append_dev(ul1, li9);
-    			append_dev(ul1, t53);
+    			append_dev(ul1, t48);
     			append_dev(ul1, li10);
-    			append_dev(ul1, t54);
+    			append_dev(ul1, t49);
     			append_dev(ul1, li11);
-    			append_dev(ul1, t55);
+    			append_dev(ul1, t50);
     			append_dev(ul1, li12);
-    			append_dev(ul1, t56);
+    			append_dev(ul1, t51);
     			append_dev(ul1, li13);
-    			append_dev(ul1, t57);
+    			append_dev(ul1, t52);
     			append_dev(ul1, li14);
-    			append_dev(ul1, t58);
-    			append_dev(ul1, li15);
-    			append_dev(div33, t59);
-    			append_dev(div33, ul2);
+    			append_dev(div30, t53);
+    			append_dev(div30, ul2);
     			append_dev(ul2, h31);
-    			append_dev(ul2, t61);
+    			append_dev(ul2, t55);
+    			append_dev(ul2, li15);
+    			append_dev(ul2, t56);
     			append_dev(ul2, li16);
+    			append_dev(li16, div21);
+    			append_dev(li16, t58);
+    			append_dev(li16, div22);
+    			append_dev(li16, t60);
+    			append_dev(li16, div23);
     			append_dev(ul2, t62);
     			append_dev(ul2, li17);
-    			append_dev(li17, div24);
-    			append_dev(li17, t64);
-    			append_dev(li17, div25);
-    			append_dev(li17, t66);
-    			append_dev(li17, div26);
-    			append_dev(ul2, t68);
+    			append_dev(ul2, t63);
     			append_dev(ul2, li18);
+    			append_dev(li18, div24);
+    			append_dev(li18, t65);
+    			append_dev(li18, div25);
+    			append_dev(li18, t67);
+    			append_dev(li18, div26);
     			append_dev(ul2, t69);
     			append_dev(ul2, li19);
-    			append_dev(li19, div27);
-    			append_dev(li19, t71);
-    			append_dev(li19, div28);
-    			append_dev(li19, t73);
-    			append_dev(li19, div29);
-    			append_dev(ul2, t75);
+    			append_dev(ul2, t70);
     			append_dev(ul2, li20);
-    			append_dev(ul2, t76);
-    			append_dev(ul2, li21);
-    			append_dev(li21, div30);
-    			append_dev(li21, t78);
-    			append_dev(li21, div31);
-    			append_dev(li21, t80);
-    			append_dev(li21, div32);
+    			append_dev(li20, div27);
+    			append_dev(li20, t72);
+    			append_dev(li20, div28);
+    			append_dev(li20, t74);
+    			append_dev(li20, div29);
     		},
     		p: noop,
     		i: noop,
@@ -1882,6 +1850,10 @@ var app = (function () {
     	let h2;
     	let t2;
     	let p;
+    	let b;
+    	let t4;
+    	let br;
+    	let t5;
 
     	const block = {
     		c: function create() {
@@ -1895,7 +1867,11 @@ var app = (function () {
     			h2.textContent = "Venue";
     			t2 = space();
     			p = element("p");
-    			p.textContent = "San Franciso Bay Area - TBD";
+    			b = element("b");
+    			b.textContent = "Virtual";
+    			t4 = space();
+    			br = element("br");
+    			t5 = text("\r\n    Located in the Bay Area. All times are in Pacific Time.");
     			if (iframe.src !== (iframe_src_value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225513.800459859!2d-124.66329873915016!3d37.86226004028482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808583a3a688d7b5%3A0x8c891b8457461fa9!2sSan%20Francisco%20Bay%20Area%2C%20CA!5e0!3m2!1sen!2sus!4v1606525794824!5m2!1sen!2sus")) attr_dev(iframe, "src", iframe_src_value);
     			set_style(iframe, "border", "0");
     			iframe.allowFullscreen = "";
@@ -1908,6 +1884,8 @@ var app = (function () {
     			add_location(div0, file$6, 3, 2, 55);
     			attr_dev(h2, "class", "svelte-2f8lue");
     			add_location(h2, file$6, 7, 4, 552);
+    			add_location(b, file$6, 9, 4, 581);
+    			add_location(br, file$6, 9, 19, 596);
     			attr_dev(p, "class", "svelte-2f8lue");
     			add_location(p, file$6, 8, 4, 572);
     			attr_dev(div1, "class", "section-right svelte-2f8lue");
@@ -1930,6 +1908,10 @@ var app = (function () {
     			append_dev(div1, h2);
     			append_dev(div1, t2);
     			append_dev(div1, p);
+    			append_dev(p, b);
+    			append_dev(p, t4);
+    			append_dev(p, br);
+    			append_dev(p, t5);
     		},
     		p: noop,
     		i: noop,
@@ -2188,7 +2170,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("[ Placeholder text about scoring ]");
+    			t = text("Our scoring system is designed to encourage original and creative scoring. We'll be using a rubric based system to allow our judges to really look at which projects are best. Read more.");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -2242,7 +2224,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("[ Placeholder text about mentor tracks ]");
+    			t = text("We'll be pairing beginner teams with mentors so that each attendee has someone to contact for help. We'll also be providing a separate prize for beginners. Read more here.");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -2432,19 +2414,34 @@ var app = (function () {
     /* src\sections\Speakers.svelte generated by Svelte v3.31.2 */
     const file$9 = "src\\sections\\Speakers.svelte";
 
-    // (9:3) <RevealItem      title="Zach Latta" tag="A Super Cool Person"      imgHref="img/scribehacks/zach.png">
+    // (9:3) <RevealItem      title="Zach Latta" tag="Founding Hack Club"      imgHref="img/scribehacks/zach.png">
     function create_default_slot$1(ctx) {
-    	let t;
+    	let t0;
+    	let br;
+    	let t1;
+    	let b;
 
     	const block = {
     		c: function create() {
-    			t = text("[ Placeholder dedscription ]");
+    			t0 = text("Q&A and a talk with Zach Latta, the founder of Hack Club. ");
+    			br = element("br");
+    			t1 = space();
+    			b = element("b");
+    			b.textContent = "September 18 - 5 PM";
+    			add_location(br, file$9, 11, 62, 362);
+    			add_location(b, file$9, 11, 67, 367);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, b, anchor);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(b);
     		}
     	};
 
@@ -2452,7 +2449,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(9:3) <RevealItem      title=\\\"Zach Latta\\\" tag=\\\"A Super Cool Person\\\"      imgHref=\\\"img/scribehacks/zach.png\\\">",
+    		source: "(9:3) <RevealItem      title=\\\"Zach Latta\\\" tag=\\\"Founding Hack Club\\\"      imgHref=\\\"img/scribehacks/zach.png\\\">",
     		ctx
     	});
 
@@ -2471,7 +2468,7 @@ var app = (function () {
     	revealitem = new RevealItem({
     			props: {
     				title: "Zach Latta",
-    				tag: "A Super Cool Person",
+    				tag: "Founding Hack Club",
     				imgHref: "img/scribehacks/zach.png",
     				$$slots: { default: [create_default_slot$1] },
     				$$scope: { ctx }
@@ -2755,7 +2752,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (70:4) {#each people as profile}
+    // (59:4) {#each people as profile}
     function create_each_block$1(ctx) {
     	let teammember;
     	let current;
@@ -2792,7 +2789,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(70:4) {#each people as profile}",
+    		source: "(59:4) {#each people as profile}",
     		ctx
     	});
 
@@ -2838,16 +2835,16 @@ var app = (function () {
     			}
 
     			attr_dev(h2, "class", "svelte-1jgtc8e");
-    			add_location(h2, file$b, 66, 3, 1697);
-    			add_location(br, file$b, 67, 3, 1719);
+    			add_location(h2, file$b, 55, 3, 1403);
+    			add_location(br, file$b, 56, 3, 1425);
     			attr_dev(ul, "class", "team-members svelte-1jgtc8e");
-    			add_location(ul, file$b, 68, 3, 1730);
+    			add_location(ul, file$b, 57, 3, 1436);
     			attr_dev(div, "class", "team svelte-1jgtc8e");
-    			add_location(div, file$b, 65, 2, 1674);
+    			add_location(div, file$b, 54, 2, 1380);
     			attr_dev(section, "class", "section svelte-1jgtc8e");
-    			add_location(section, file$b, 64, 2, 1645);
+    			add_location(section, file$b, 53, 2, 1351);
     			attr_dev(a, "name", "team");
-    			add_location(a, file$b, 63, 0, 1626);
+    			add_location(a, file$b, 52, 0, 1332);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2950,21 +2947,10 @@ var app = (function () {
     			gh: "https://github.com/SDBagel"
     		},
     		{
-    			name: "Kai",
-    			image: "/img/team/kai.png",
-    			in: "https://www.linkedin.com/in/kai-mccormick/",
-    			gh: "https://github.com/kaidevrim"
-    		},
-    		{
     			name: "Rohan",
     			image: "/img/team/rohan.jpg",
     			in: "https://linkedin.com/in/bansal-rohan",
     			gh: "https://github.com/rohan-bansal"
-    		},
-    		{
-    			name: "Shreya",
-    			image: "/img/team/shreya.jpg",
-    			gh: "https://github.com/shreyaparikh08"
     		},
     		{
     			name: "Aparna",

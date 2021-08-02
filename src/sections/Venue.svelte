@@ -8,7 +8,7 @@
     <h2>Venue</h2>
     <p>
     <b>Virtual</b> <br>
-    Located in the Bay Area. All times are in PST.
+    Located in the Bay Area. All times are in Pacific Time.
     </p>
   </div>
 </section>
